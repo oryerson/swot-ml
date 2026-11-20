@@ -1,0 +1,71 @@
+[project]
+name = "swot-ml"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "dask-deltatable>=0.4.0",
+    "dask-jobqueue>=0.9.0",
+    "dask[distributed]>=2025.7.0",
+    "deltalake>=1.1.4",
+    "equinox>=0.12.2",
+    "geopandas>=1.1.0",
+    "h5netcdf>=1.6.4",
+    "h5py>=3.14.0",
+    "jax<0.6.0",
+    "matplotlib>=3.10.3",
+    "netcdf4>=1.7.2",
+    "networkx>=3.5",
+    "numpy>=1.26,<2",
+    "optax>=0.2.5",
+    "pandas>=2.3.0",
+    "pyarrow>=20.0.0",
+    "pydantic>=2.11.7",
+    "rasterio>=1.4.3",
+    "scikit-learn>=1.7.0",
+    "tables>=3.10.2",
+    "torch>=2.0.1",
+    "tqdm>=4.67.1",
+    "typer>=0.16.0",
+    "xarray>=2025.6.1",
+    "zarr>=3.1.2",
+    "global-gauges",
+]
+
+[tool.uv]
+package = true
+
+[tool.uv.sources]
+global-gauges = { path = "../global_gauges" }
+
+[tool.ruff]
+exclude = [
+    "src/models/needs_updated",
+    "notebooks"
+]
+line-length = 100
+indent-width = 4
+
+[tool.ruff.lint.extend-per-file-ignores]
+"__init__.py" = ["F401"]
+
+[project.optional-dependencies]
+gpu = [
+  "jax-cuda12-plugin==0.5.3",
+  "nvidia-cuda-nvcc-cu12",
+]
+
+[dependency-groups]
+bayesian-opt = [
+    "configspace>=1.2.1",
+    "smac>=1.5.0,<3.0.0",
+]
+dev = [
+    "ipykernel>=6.29.5",
+    "ipympl>=0.9.7",
+    "jupyter>=1.1.1",
+    "memory-profiler>=0.61.0",
+    "notebook>=7.4.3",
+    "objgraph>=3.6.2",
+]

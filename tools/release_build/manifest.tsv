@@ -1,0 +1,307 @@
+# release_path	original_path	mode	note	exclude	deploy_as
+vendor/swot_ml/src/	$R/CONUS_storage_fork/eval/v35_launch/stage_src_v35/**/*.py	raw	model source the paper runs imported (staged copy; see vendor/swot_ml/UPSTREAM.md)	^test_	
+vendor/swot_ml/CHANGES_v35.md	$R/CONUS_storage_fork/eval/v35_launch/stage_src_v35/CHANGES_v35.md	raw			
+vendor/swot_ml/README_upstream.md	$R/swot-ml/README.md	raw			
+vendor/swot_ml/code_overview.drawio.png	$R/swot-ml/code_overview.drawio.png	raw			
+vendor/graph_delineator/src/graph_delineator/	$R/CONUS_storage_fork/eval/graph_v3/src_v34/graph_delineator/*.py	raw	delineator package imported by the graph v3.4 delineation job		
+vendor/graph_delineator/patches/delineate_reservoirs_working_v34.patch	$R/CONUS_storage_fork/eval/graph_v3/delineate_reservoirs_working_v34.patch	raw			
+vendor/graph_delineator/README_upstream.md	$R/graph_delineator/README.md	raw			
+vendor/graph_delineator/pyproject.toml	$R/graph_delineator/pyproject.toml	raw			
+vendor/graph_delineator/uv.lock	$R/graph_delineator/uv.lock	raw			
+vendor/graph_delineator/Catchment_Split_Rules.txt	$R/graph_delineator/Catchment Split Rules.txt	raw			
+vendor/graph_delineator/all_matchups.csv	$R/graph_delineator/all_matchups.csv	raw			graph_delineator/all_matchups.csv
+vendor/half_v1/	$R/CONUS_storage_fork/eval/swotext/half_v1/*	raw	HALF v1.0 release (Wang & Trudel, MIT licence), unmodified		
+environment/swot_ml/pyproject.toml	$R/swot-ml/pyproject.toml	raw			
+environment/swot_ml/uv.lock	$R/swot-ml/uv.lock	raw			
+environment/swot_ml/.python-version	$R/swot-ml/.python-version	raw			
+01_graph/build_conus_basin_list.py	$R/CONUS/preprocess/build_conus_basin_list.py	auto			
+01_graph/build_merit_vrts.py	$R/CONUS/preprocess/build_merit_vrts.py	auto			
+01_graph/snap_gauges_v34.py	$R/CONUS_storage_fork/eval/graph_v3/snap_gauges_v34.py	auto			
+01_graph/delineate_basin_v34.py	$R/CONUS_storage_fork/eval/graph_v3/stage/delineate_basin_v34.py	auto			
+01_graph/build_conus_subbasins.py	$R/CONUS/preprocess/build_conus_subbasins.py	auto			
+01_graph/build_conus_graphs_v2.py	$R/CONUS_storage_fork/eval/graph_v3/stage/build_conus_graphs_v2.py	auto			
+01_graph/carry_v2_fixes.py	$R/CONUS_storage_fork/eval/graph_v3/carry_v2_fixes.py	auto			
+01_graph/lake_evidence_v35.py	$R/CONUS_storage_fork/eval/graph_v3/lake_evidence_v35.py	auto			
+01_graph/make_decisions_v35.py	$R/CONUS_storage_fork/eval/graph_v3/make_decisions_v35.py	auto			
+01_graph/apply_v35.py	$R/CONUS_storage_fork/eval/graph_v3/apply_v35.py	auto			
+01_graph/install_v35.py	$R/CONUS_storage_fork/eval/v35_inputs/config/install_v35.py	auto			
+01_graph/inputs/install_plan_v35.json.template	$R/CONUS_storage_fork/eval/v35_inputs/config/install_plan_v35.json	template			
+01_graph/inputs/gauges_v34/	$R/CONUS_storage_fork/eval/graph_v3/gauges_v34/*.csv	raw	re-snapped gauge tables (output of snap_gauges_v34.py), shipped frozen		
+01_graph/inputs/carry_edits_v34.csv	$R/CONUS_storage_fork/eval/graph_v3/v34/carry_edits.csv	raw	output of carry_v2_fixes.py, shipped for reference		
+01_graph/inputs/review_v34_items.csv	$R/CONUS_storage_fork/eval/graph_v3/review_v34/items.csv	raw			
+01_graph/inputs/lake_evidence_v35.csv	$R/CONUS_storage_fork/eval/graph_v3/v35_work/lake_evidence.csv	raw			
+01_graph/inputs/decisions_v35.csv	$R/CONUS_storage_fork/eval/graph_v3/v35_work/decisions_v35.csv	raw	review rulings, one row per item (output of make_decisions_v35.py)		
+02_static_attributes/build_conus_static.py	$R/CONUS_storage_fork/eval/v35_inputs/statics/src/build_conus_static.py	auto			
+02_static_attributes/build_conus_gdw_static.py	$R/CONUS_storage_fork/eval/v35_inputs/statics/src/build_conus_gdw_static.py	auto			
+02_static_attributes/merit_uparea_v35.py	$R/CONUS_storage_fork/eval/v35_inputs/statics/src/merit_uparea_v35.py	auto			
+02_static_attributes/merit_override_v35.py	$R/CONUS_storage_fork/eval/v35_inputs/statics/src/merit_override_v35.py	auto			
+02_static_attributes/build_storage_static.py	$R/CONUS_storage_fork/eval/v35_inputs/statics/src/build_storage_static.py	auto			
+02_static_attributes/fix_gdw_static.py	$R/CONUS_storage_fork/eval/v35_inputs/statics/src/fix_gdw_static.py	auto			
+02_static_attributes/freeze_dam_v35.py	$R/CONUS_storage_fork/eval/v35_inputs/statics/src/freeze_dam_v35.py	auto			
+02_static_attributes/apply_g4_overrides.py	$R/CONUS_storage_fork/eval/v35_inputs/statics/src/apply_g4_overrides.py	auto			
+02_static_attributes/assemble_checks_v35_r2.py	$R/CONUS_storage_fork/eval/v35_inputs/statics/src/assemble_checks_v35_r2.py	auto			
+02_static_attributes/step0_keys.py	$R/CONUS_storage_fork/crosswalk/step0_keys.py	auto			
+02_static_attributes/inputs/g4_overrides.csv	$R/CONUS_storage_fork/eval/g4_fix/g4_overrides.csv	raw			
+02_static_attributes/inputs/properties.txt	/nas/cee-water/cjgleason/ted/swot-ml/data/owen_reservoirs/Columbia/attributes/properties.txt	raw	list of BasinATLAS attribute columns (from Ted Langhorst's Columbia setup)		
+03_forcings/a_production_2000_2025/flipped_extract_sub_basins.py	$R/CONUS/preprocess/flipped_extract_sub_basins.py	auto			
+03_forcings/a_production_2000_2025/merge_era5_conus.py	$R/CONUS/preprocess/merge_era5_conus.py	auto			
+03_forcings/a_production_2000_2025/update_zarr_stats_conus.py	$R/CONUS/preprocess/update_zarr_stats_conus.py	auto			
+03_forcings/a_production_2000_2025/fix_empty_stats.py	$R/CONUS/preprocess/fix_empty_stats.py	auto			
+03_forcings/b_extension_1980_1999/weights.py	$R/CONUS_storage_fork/eval/overnight/era5ext/weights.py	auto			
+03_forcings/b_extension_1980_1999/extract.py	$R/CONUS_storage_fork/eval/overnight/era5ext/extract.py	auto			
+03_forcings/b_extension_1980_1999/build_store.py	$R/CONUS_storage_fork/eval/overnight/era5ext/build_store.py	auto			
+03_forcings/b_extension_1980_1999/verify_store.py	$R/CONUS_storage_fork/eval/overnight/era5ext/verify_store.py	auto			
+03_forcings/c_extension_2026/download_2026.py	$R/CONUS_storage_fork/eval/overnight/era5_2026/download_2026.py	auto			
+03_forcings/c_extension_2026/download_inst.py	$R/CONUS_storage_fork/eval/overnight/era5_2026/download_inst.py	auto			
+03_forcings/c_extension_2026/prep_inst.py	$R/CONUS_storage_fork/eval/overnight/era5_2026/prep_inst.py	auto			
+03_forcings/c_extension_2026/prep_2026.py	$R/CONUS_storage_fork/eval/overnight/era5_2026/prep_2026.py	auto			
+03_forcings/c_extension_2026/build_store_vd2026.py	$R/CONUS_storage_fork/eval/overnight/era5_2026/build_store_vd2026.py	auto			
+03_forcings/c_extension_2026/verify_store_vd2026.py	$R/CONUS_storage_fork/eval/overnight/era5_2026/verify_store_vd2026.py	auto			
+03_forcings/c_extension_2026/store_inputs_vd.py	$R/CONUS_storage_fork/eval/swotext/store_inputs_vd.py	auto			
+03_forcings/c_extension_2026/inputs/susq_map.json	$R/CONUS_storage_fork/eval/overnight/era5_2026/susq_map.json	raw			
+03_forcings/d_graph_v35_stores/make_scripts.py	$R/CONUS_storage_fork/eval/v35_inputs/forcing/scripts/make_scripts.py	auto			
+03_forcings/d_graph_v35_stores/node_map.py	$R/CONUS_storage_fork/eval/v35_inputs/forcing/scripts/node_map.py	auto			
+03_forcings/d_graph_v35_stores/prescan_template.py	$R/CONUS_storage_fork/eval/v35_inputs/forcing/scripts/prescan_template.py	auto			
+03_forcings/d_graph_v35_stores/weights_v35.py	$R/CONUS_storage_fork/eval/v35_inputs/forcing/scripts/weights_v35.py	auto			
+03_forcings/d_graph_v35_stores/extract_v35.py	$R/CONUS_storage_fork/eval/v35_inputs/forcing/scripts/extract_v35.py	auto			
+03_forcings/d_graph_v35_stores/prep_2026_v35.py	$R/CONUS_storage_fork/eval/v35_inputs/forcing/scripts/prep_2026_v35.py	auto			
+03_forcings/d_graph_v35_stores/make_pred_weights.py	$R/CONUS_storage_fork/eval/v35_inputs/forcing/scripts/make_pred_weights.py	auto			
+03_forcings/d_graph_v35_stores/extract_pred_v35.py	$R/CONUS_storage_fork/eval/v35_inputs/forcing/scripts/extract_pred_v35.py	auto			
+03_forcings/d_graph_v35_stores/build_store_v35.py	$R/CONUS_storage_fork/eval/v35_inputs/forcing/scripts/build_store_v35.py	auto			
+03_forcings/d_graph_v35_stores/build_store_pred_v35.py	$R/CONUS_storage_fork/eval/v35_inputs/forcing/scripts/build_store_pred_v35.py	auto			
+03_forcings/d_graph_v35_stores/checks_v35.py	$R/CONUS_storage_fork/eval/v35_inputs/forcing/scripts/checks_v35.py	auto			
+03_forcings/d_graph_v35_stores/checks_pred_v35.py	$R/CONUS_storage_fork/eval/v35_inputs/forcing/scripts/checks_pred_v35.py	auto			
+03_forcings/d_graph_v35_stores/write_ready_v35.py	$R/CONUS_storage_fork/eval/v35_inputs/config/write_ready_v35.py	auto			
+03_forcings/e_long_memory/build_longmem.py	$R/CONUS_storage_fork/eval/overnight/longmem/build_longmem.py	auto			
+03_forcings/e_long_memory/build_longmem_v35.py	$R/CONUS_storage_fork/eval/featscreen_v2/lmrank/build_longmem_v35.py	auto			
+03_forcings/e_long_memory/check_longmem_v35.py	$R/CONUS_storage_fork/eval/featscreen_v2/lmrank/check_longmem_v35.py	auto			
+03_forcings/e_long_memory/check_c3_ties.py	$R/CONUS_storage_fork/eval/featscreen_v2/lmrank/check_c3_ties.py	auto			
+03_forcings/e_long_memory/inputs/LM_SUBSET_v35.json	$R/CONUS_storage_fork/eval/featscreen_v2/lmrank/LM_SUBSET_v35.json	raw			
+03_forcings/e_long_memory/build_lm_c5.py	$R/CONUS_storage_fork/eval/c5_paper/build_lm_c5.py	auto			
+03_forcings/e_long_memory/check_lm_c5.py	$R/CONUS_storage_fork/eval/c5_paper/check_lm_c5.py	auto			
+04_swot_targets/a_lakes/lake_lists.py	$R/CONUS_storage_fork/eval/swotext/lake_lists.py	auto			
+04_swot_targets/a_lakes/hc_pull.py	$R/CONUS_storage_fork/eval/swotext/hc_pull.py	auto			
+04_swot_targets/a_lakes/half_batch.py	$R/CONUS_storage_fork/eval/swotext/half_batch.py	auto			
+04_swot_targets/a_lakes/build_vd_half.py	$R/CONUS_storage_fork/eval/swotext/build_vd_half.py	auto			
+04_swot_targets/a_lakes/release_replay.py	$R/CONUS_storage_fork/eval/half_vd_review/release_replay.py	auto			
+04_swot_targets/a_lakes/compare_replay.py	$R/CONUS_storage_fork/eval/half_vd_review/compare_replay.py	auto			
+04_swot_targets/a_lakes/build_halfexact.py	$R/CONUS_storage_fork/eval/half_vd_review/build_halfexact.py	auto			
+04_swot_targets/a_lakes/make_lake_targets_hx.py	$R/CONUS_storage_fork/eval/v21_retrain/store/make_lake_targets_hx.py	auto			
+04_swot_targets/a_lakes/merge_res_swot_conus.py	$R/CONUS/preprocess/merge_res_swot_conus.py	auto			
+04_swot_targets/b_rivers/merge_swot_river_conus.py	$R/CONUS/preprocess/merge_swot_river_conus.py	auto			
+04_swot_targets/b_rivers/svs_reach_overrides.py	$R/CONUS/preprocess/svs_reach_overrides.py	auto			
+04_swot_targets/b_rivers/build_storage_target_conus.py	$R/CONUS/preprocess/build_storage_target_conus.py	auto			
+04_swot_targets/b_rivers/build_river_paper_mask.py	$R/CONUS/preprocess/build_river_paper_mask.py	auto			
+04_swot_targets/b_rivers/reach_list.py	$R/CONUS_storage_fork/eval/swotext/reach_list.py	auto			
+04_swot_targets/b_rivers/hc_pull_reach.py	$R/CONUS_storage_fork/eval/swotext/hc_pull_reach.py	auto			
+04_swot_targets/b_rivers/river_build_v2.py	$R/CONUS_storage_fork/eval/swotext/river_build_v2.py	auto			
+04_swot_targets/b_rivers/river_xwalk_v1.py	$R/CONUS_storage_fork/eval/v35_inputs/forcing/scripts/river_xwalk_v1.py	auto			
+04_swot_targets/b_rivers/river_build_v35.py	$R/CONUS_storage_fork/eval/v35_inputs/forcing/scripts/river_build_v35.py	auto			
+04_swot_targets/b_rivers/reach_area_v35.py	$R/CONUS_storage_fork/eval/v35_inputs/forcing/scripts/reach_area_v35.py	auto			
+04_swot_targets/b_rivers/reach_area_v35_fix.py	$R/CONUS_storage_fork/eval/v35_inputs/forcing/scripts/reach_area_v35_fix.py	auto			
+04_swot_targets/b_rivers/river_build_v35ra.py	$R/CONUS_storage_fork/eval/v35_inputs/forcing/scripts/river_build_v35ra.py	auto			
+04_swot_targets/c_template_store/make_builder.py	$R/CONUS_storage_fork/eval/v21_retrain/store/make_builder.py	auto			
+04_swot_targets/c_template_store/build_store_vd2026_halfexact.py	$R/CONUS_storage_fork/eval/v21_retrain/store/build_store_vd2026_halfexact.py	auto			
+04_swot_targets/c_template_store/verify_store_hx.py	$R/CONUS_storage_fork/eval/v21_retrain/store/verify_store_hx.py	auto			
+04_swot_targets/c_template_store/make_t9_mask.py	$R/CONUS_storage_fork/eval/v21_retrain/store/make_t9_mask.py	auto			
+04_swot_targets/c_template_store/make_t9b_mask.py	$R/CONUS_storage_fork/eval/v21_retrain/store/make_t9b_mask.py	auto			
+04_swot_targets/c_template_store/dup_targets.py	$R/CONUS_storage_fork/eval/dup_targets.py	auto			
+04_swot_targets/c_template_store/inputs/t9b_nodes.csv	$R/CONUS_storage_fork/eval/v21_retrain/store/t9b_nodes.csv	raw			
+04_swot_targets/c_template_store/inputs/t9_nodes.csv	$R/CONUS_storage_fork/eval/v21_retrain/store/t9_nodes.csv	raw			
+04_swot_targets/d_lists_and_masks/build_storage_splits.py	$R/CONUS/preprocess/build_storage_splits.py	auto			
+04_swot_targets/d_lists_and_masks/filter_graph_basins.py	$R/CONUS/preprocess/filter_graph_basins.py	auto			
+04_swot_targets/d_lists_and_masks/map_rivers_v35.py	$R/CONUS_storage_fork/eval/v35_inputs/lists/scripts/map_rivers_v35.py	auto			
+04_swot_targets/d_lists_and_masks/rekey_lists_v35.py	$R/CONUS_storage_fork/eval/v35_inputs/lists/scripts/rekey_lists_v35.py	auto			
+04_swot_targets/d_lists_and_masks/filter_graph_basins_v35.py	$R/CONUS_storage_fork/eval/v35_inputs/lists/scripts/filter_graph_basins_v35.py	auto			
+04_swot_targets/d_lists_and_masks/build_lists_v35.py	$R/CONUS_storage_fork/eval/v35_inputs/lists/scripts/build_lists_v35.py	auto			
+04_swot_targets/d_lists_and_masks/mask_rekey_info_v35.py	$R/CONUS_storage_fork/eval/v35_inputs/lists/scripts/mask_rekey_info_v35.py	auto			
+04_swot_targets/d_lists_and_masks/make_t9_mask_v35ra.py	$R/CONUS_storage_fork/eval/v35_inputs/lists/scripts/make_t9_mask_v35ra.py	auto			
+04_swot_targets/d_lists_and_masks/make_t9b_mask_v35ra.py	$R/CONUS_storage_fork/eval/v35_inputs/lists/scripts/make_t9b_mask_v35ra.py	auto			
+05_training/v35lib.py	$R/CONUS_storage_fork/eval/v35_launch/v35lib.py	auto			
+05_training/build_cache_v35.py	$R/CONUS_storage_fork/eval/v35_launch/build_cache_v35.py	auto			
+05_training/configs/era5_conus_v35c5_S1_storage.json.template	$R/CONUS/era5_conus_v35c5_S1_storage.json	template	C5 seed-0 config (md5 e91fd492...); project root replaced by ${SWOTGAT_WORK}; render_configs.py restores it byte-for-byte		
+05_training/configs/era5_conus_v35c5_S2_storage_s1.json.template	$R/CONUS/era5_conus_v35c5_S2_storage_s1.json	template	C5 seed-1 config (md5 55881f63...); project root replaced by ${SWOTGAT_WORK}; render_configs.py restores it byte-for-byte		
+06_predictions/run_predict_ext.py	$R/CONUS_storage_fork/eval/overnight/run_predict_ext.py	auto			
+06_predictions/pred_c5.py	$R/CONUS_storage_fork/eval/c5_paper/pred_c5.py	auto			
+06_predictions/pred_assert_c5.py	$R/CONUS_storage_fork/eval/c5_paper/pred_assert_c5.py	auto			
+06_predictions/pred_v35_lowmem.py	$R/CONUS_storage_fork/eval/v35_launch/c4/pred_v35_lowmem.py	auto			
+06_predictions/pred_assert_v35.py	$R/CONUS_storage_fork/eval/v35_launch/eval/pred_assert_v35.py	auto			
+06_predictions/inputs/nodes_r3_union.csv	$R/CONUS_storage_fork/eval/c5_paper/nodes_r3_union.csv	raw			
+06_predictions/inputs/nodes_h10.csv	$R/CONUS_storage_fork/eval/v35_launch/results/C5/nodes_h10.csv	raw			
+06_predictions/inputs/nodes_x26.csv	$R/CONUS_storage_fork/eval/v35_launch/results/C5/nodes_x26.csv	raw			
+07_evaluation/a_gauge_truth/agency_2023_2025/build_catalogs.py	$R/CONUS_storage_fork/build_catalogs.py	auto			
+07_evaluation/a_gauge_truth/agency_2023_2025/cat_codwr.py	$R/CONUS_storage_fork/cat_codwr.py	auto			
+07_evaluation/a_gauge_truth/agency_2023_2025/nwis_v2.py	$R/CONUS_storage_fork/nwis_v2.py	auto			
+07_evaluation/a_gauge_truth/agency_2023_2025/harvest.py	$R/CONUS_storage_fork/harvest.py	auto			
+07_evaluation/a_gauge_truth/agency_2023_2025/harvest_v2.py	$R/CONUS_storage_fork/harvest_v2.py	auto			
+07_evaluation/a_gauge_truth/agency_2023_2025/rise_by_name.py	$R/CONUS_storage_fork/rise_by_name.py	auto			
+07_evaluation/a_gauge_truth/agency_2023_2025/manual_override.py	$R/CONUS_storage_fork/manual_override.py	auto			
+07_evaluation/a_gauge_truth/agency_2023_2025/merge_truth.py	$R/CONUS_storage_fork/merge_truth.py	auto			
+07_evaluation/a_gauge_truth/agency_2023_2025/qa_harvest.py	$R/CONUS_storage_fork/qa_harvest.py	auto			
+07_evaluation/a_gauge_truth/agency_2023_2025/qa_truth.py	$R/CONUS_storage_fork/qa_truth.py	auto			
+07_evaluation/a_gauge_truth/agency_2023_2025/obsfilter.py	$R/CONUS_storage_fork/obsfilter.py	auto			
+07_evaluation/a_gauge_truth/agency_2023_2025/renode.py	$R/CONUS_storage_fork/renode.py	auto			
+07_evaluation/a_gauge_truth/agency_2023_2025/apply_renode_truth.py	$R/CONUS_storage_fork/apply_renode_truth.py	auto			
+07_evaluation/a_gauge_truth/agency_2023_2025/resops_units.py	$R/CONUS_storage_fork/resops_units.py	auto			
+07_evaluation/a_gauge_truth/crosswalk/step0_graph.py	$R/CONUS_storage_fork/crosswalk/step0_graph.py	auto			
+07_evaluation/a_gauge_truth/crosswalk/step1_resops_qa.py	$R/CONUS_storage_fork/crosswalk/step1_resops_qa.py	auto			
+07_evaluation/a_gauge_truth/crosswalk/step1b_resops_verdict.py	$R/CONUS_storage_fork/crosswalk/step1b_resops_verdict.py	auto			
+07_evaluation/a_gauge_truth/crosswalk/step23_crosswalk.py	$R/CONUS_storage_fork/crosswalk/step23_crosswalk.py	auto			
+07_evaluation/a_gauge_truth/crosswalk/step5_gauge_overlap.py	$R/CONUS_storage_fork/crosswalk/step5_gauge_overlap.py	auto			
+07_evaluation/a_gauge_truth/crosswalk/step5b_tournament.py	$R/CONUS_storage_fork/crosswalk/step5b_tournament.py	auto			
+07_evaluation/a_gauge_truth/crosswalk/step5c_gauge_final.py	$R/CONUS_storage_fork/crosswalk/step5c_gauge_final.py	auto			
+07_evaluation/a_gauge_truth/crosswalk/step6_review.py	$R/CONUS_storage_fork/crosswalk/step6_review.py	auto			
+07_evaluation/a_gauge_truth/crosswalk/step6b_review_batch2.py	$R/CONUS_storage_fork/crosswalk/step6b_review_batch2.py	auto			
+07_evaluation/a_gauge_truth/crosswalk/step6c_audit_labels.py	$R/CONUS_storage_fork/crosswalk/step6c_audit_labels.py	auto			
+07_evaluation/a_gauge_truth/crosswalk/step7_build_testsets.py	$R/CONUS_storage_fork/crosswalk/step7_build_testsets.py	auto			
+07_evaluation/a_gauge_truth/crosswalk/inputs/crosswalk_overrides.csv	$R/CONUS_storage_fork/crosswalk/crosswalk_overrides.csv	raw			
+07_evaluation/a_gauge_truth/crosswalk/inputs/crosswalk_audit_labels.csv	$R/CONUS_storage_fork/crosswalk/crosswalk_audit_labels.csv	raw			
+07_evaluation/a_gauge_truth/gauge_stat_screen.py	$R/CONUS_storage_fork/eval/gauge_stat_screen.py	auto			
+07_evaluation/a_gauge_truth/build_gauge_exclusions.py	$R/CONUS_storage_fork/eval/build_gauge_exclusions.py	auto			
+07_evaluation/a_gauge_truth/build_regime3.py	$R/CONUS_storage_fork/eval/overnight/build_regime3.py	auto			
+07_evaluation/a_gauge_truth/agency_2026/harvest_2026.py	$R/CONUS_storage_fork/gauges2026/harvest_2026.py	auto			
+07_evaluation/a_gauge_truth/agency_2026/build_regime1x.py	$R/CONUS_storage_fork/gauges2026/build_regime1x.py	auto			
+07_evaluation/a_gauge_truth/span_vd.py	$R/CONUS_storage_fork/eval/score2026/span_vd.py	auto			
+07_evaluation/a_gauge_truth/crosswalk/extract_pld_wse.py	$R/CONUS_storage_fork/crosswalk/extract_pld_wse.py	auto			
+07_evaluation/a_gauge_truth/expanded_set/make_crosswalk_plus.py	$R/CONUS_storage_fork/gauges_expand/make_crosswalk_plus.py	auto			
+07_evaluation/a_gauge_truth/expanded_set/stage_gss.py	$R/CONUS_storage_fork/gauges_expand/stage_gss.py	auto			
+07_evaluation/a_gauge_truth/expanded_set/stage/gauge_stat_screen.py	$R/CONUS_storage_fork/gauges_expand/stage/gauge_stat_screen.py	auto	generated by stage_gss.py; the copy build_plus.py imports		
+07_evaluation/a_gauge_truth/expanded_set/crosswalk_plus.py	$R/CONUS_storage_fork/gauges_expand/crosswalk_plus/crosswalk_plus.py	auto	generated by make_crosswalk_plus.py		
+07_evaluation/a_gauge_truth/expanded_set/gx_common.py	$R/CONUS_storage_fork/gauges_expand/gx_common.py	auto			
+07_evaluation/a_gauge_truth/expanded_set/discover_expand.py	$R/CONUS_storage_fork/gauges_expand/discover_expand.py	auto			
+07_evaluation/a_gauge_truth/expanded_set/harvest_expand.py	$R/CONUS_storage_fork/gauges_expand/harvest_expand.py	auto			
+07_evaluation/a_gauge_truth/expanded_set/size_candidates.py	$R/CONUS_storage_fork/gauges_expand/size_candidates.py	auto			
+07_evaluation/a_gauge_truth/expanded_set/build_plus.py	$R/CONUS_storage_fork/gauges_expand/build_plus.py	auto			
+07_evaluation/a_gauge_truth/expanded_set/summarize_plus.py	$R/CONUS_storage_fork/gauges_expand/summarize_plus.py	auto			
+07_evaluation/a_gauge_truth/g4_testsets/build_testsets_g4.py	$R/CONUS_storage_fork/eval/g4_fix/build_testsets_g4.py	auto			
+07_evaluation/b_rule_models/grades_prep.py	$R/GRADES/grades_prep.py	auto			
+07_evaluation/b_rule_models/grades_prep_2026.py	$R/GRADES/grades_prep_2026.py	auto			
+07_evaluation/b_rule_models/grades_map.py	$R/GRADES/grades_map.py	auto			
+07_evaluation/b_rule_models/grades_cascade_prep.py	$R/GRADES/grades_cascade_prep.py	auto			
+07_evaluation/b_rule_models/modrom_nongrand_nodes.py	$R/GRADES/modrom_nongrand_nodes.py	auto			
+07_evaluation/b_rule_models/resops_engines.py	$R/GRADES/resops_engines.py	auto			
+07_evaluation/b_rule_models/grades_sim_v4.py	$R/GRADES/grades_sim_v4.py	auto			
+07_evaluation/b_rule_models/validate_engines.py	$R/GRADES/validate_engines.py	auto			
+07_evaluation/b_rule_models/grades_prep_early.py	$R/CONUS_storage_fork/eval/overnight/grades_prep_early.py	auto			
+07_evaluation/b_rule_models/grades_sim_v4_hindcast.py	$R/GRADES/grades_sim_v4.py.bak_20261011	auto	simulator version that made the 1980-2020 rule-model runs (the later grades_sim_v4.py adds --end/--qbar-end)		GRADES/grades_sim_v4_hindcast.py
+07_evaluation/b_rule_models/inputs/testset_dams.csv	$R/GRADES/testset_dams.csv	raw			
+07_evaluation/b_rule_models/inputs/gdrive_listing.json	$R/GRADES/gdrive_listing.json	raw			
+07_evaluation/c_scoring/ip_series.py	$R/CONUS_storage_fork/eval/grl_figs/intermediate/a365_vDspan_20261029b/kit_a365d/ip_series.py	auto			
+07_evaluation/c_scoring/normal_year_source/score_fullrecord.py	$R/CONUS_storage_fork/eval/c5_paper/fig_c5/score_fullrecord.py	auto	earlier scorer; bl.py takes only its normal_year() function from this file		
+07_evaluation/c_scoring/overlap50/score_2010.py	$R/CONUS_storage_fork/eval/overlap50/score/score_2010.py	auto			
+07_evaluation/c_scoring/overlap50/score_x26span.py	$R/CONUS_storage_fork/eval/overlap50/score/score_x26span.py	auto			
+07_evaluation/c_scoring/overlap50/score_fullrecord.py	$R/CONUS_storage_fork/eval/overlap50/score/score_fullrecord.py	auto			
+07_evaluation/c_scoring/overlap50/decade.py	$R/CONUS_storage_fork/eval/overlap50/score/decade.py	auto			
+07_evaluation/c_scoring/overlap50/bl.py	$R/CONUS_storage_fork/eval/overlap50/score/bl.py	auto			
+07_evaluation/c_scoring/overlap50/ipx.py	$R/CONUS_storage_fork/eval/overlap50/score/ipx.py	auto			
+07_evaluation/c_scoring/overlap50/ipcfg.py	$R/CONUS_storage_fork/eval/overlap50/score/ipcfg.py	auto			
+07_evaluation/c_scoring/overlap50/fig1_nums.py	$R/CONUS_storage_fork/eval/overlap50/code/fig1_nums.py	auto			
+07_evaluation/c_scoring/overlap50/analyze.py	$R/CONUS_storage_fork/eval/overlap50/code/analyze.py	auto			
+07_evaluation/c_scoring/overlap50/text_nums_o50.py	$R/CONUS_storage_fork/eval/overlap50/code/text_nums_o50.py	auto			
+07_evaluation/c_scoring/full_record/score_fullrecord.py	$R/CONUS_storage_fork/eval/grl_figs/intermediate/c5_o50_20261113/score/score_fullrecord.py	auto			
+07_evaluation/c_scoring/full_record/score_x26span.py	$R/CONUS_storage_fork/eval/grl_figs/intermediate/c5_o50_20261113/score/score_x26span.py	auto			
+07_evaluation/c_scoring/full_record/full.py	$R/CONUS_storage_fork/eval/grl_figs/intermediate/c5_o50_20261113/score/full.py	auto			
+07_evaluation/c_scoring/full_record/bl.py	$R/CONUS_storage_fork/eval/grl_figs/intermediate/c5_o50_20261113/score/bl.py	auto			
+07_evaluation/c_scoring/full_record/ipx.py	$R/CONUS_storage_fork/eval/grl_figs/intermediate/c5_o50_20261113/score/ipx.py	auto			
+07_evaluation/c_scoring/full_record/ipcfg.py	$R/CONUS_storage_fork/eval/grl_figs/intermediate/c5_o50_20261113/score/ipcfg.py	auto			
+07_evaluation/c_scoring/full_record/check_score.py	$R/CONUS_storage_fork/eval/grl_figs/intermediate/c5_o50_20261113/code/check_score.py	auto			
+07_evaluation/c_scoring/full_record/spot_ens.py	$R/CONUS_storage_fork/eval/grl_figs/intermediate/c5_o50_20261113/code/spot_ens.py	auto			
+07_evaluation/c_scoring/full_record/picks.py	$R/CONUS_storage_fork/eval/grl_figs/intermediate/c5_o50_20261113/code/picks.py	auto			
+07_evaluation/c_scoring/full_record/picks_d.py	$R/CONUS_storage_fork/eval/grl_figs/intermediate/c5_o50_20261113/code/picks_d.py	auto			
+07_evaluation/c_scoring/full_record/pinned_check.py	$R/CONUS_storage_fork/eval/grl_figs/intermediate/c5_o50_20261113/code/pinned_check.py	auto			
+07_evaluation/c_scoring/full_record/sd8120.py	$R/CONUS_storage_fork/eval/grl_figs/intermediate/c5_o50_20261113/code/sd8120.py	auto			
+07_evaluation/c_scoring/drivers/fig3c_sd.py	$R/CONUS_storage_fork/eval/overlap50/fig3c_sd/fig3c_sd.py	auto			
+07_evaluation/c_scoring/drivers/irr_harm.py	$R/CONUS_storage_fork/eval/overlap50/fig3c_sd/irr_harm.py	auto			
+07_evaluation/c_scoring/drivers/pa_lib.py	$R/CONUS_storage_fork/eval/perf_attrib/pa_lib.py	auto			
+07_evaluation/c_scoring/drivers/pa_ops8120.py	$R/CONUS_storage_fork/eval/perf_attrib/pa_ops8120.py	auto			
+07_evaluation/c_scoring/drivers/pa_vars.py	$R/CONUS_storage_fork/eval/perf_attrib/pa_vars.py	auto			
+07_evaluation/c_scoring/drivers/pa_blocks.py	$R/CONUS_storage_fork/eval/perf_attrib/pa_blocks.py	auto			
+07_evaluation/c_scoring/drivers/irreg0020_g.py	$R/CONUS_storage_fork/eval/grl_figs/intermediate/a365_vDspan_20261030/figset_a365e/irreg0020_g.py	auto			
+07_evaluation/c_scoring/ipcfg.py	$R/CONUS_storage_fork/eval/grl_figs/intermediate/a365_vDspan_20261029b/kit_a365d/ipcfg.py	auto	run settings read by ip_series.py (same file as overlap50/ipcfg.py)		
+07_evaluation/d_swot_vs_gauge/swot_vs_gauge.py	$R/CONUS_storage_fork/eval/swot_vs_gauge/swot_vs_gauge.py	auto			
+08_figures/fig1_c5d.py	$R/CONUS_storage_fork/eval/grl_figs/intermediate/c5_o50_20261113/kit_d/fig1_c5d.py	auto			
+08_figures/fig2_c5d.py	$R/CONUS_storage_fork/eval/grl_figs/intermediate/c5_o50_20261113/kit_d/fig2_c5d.py	auto			
+08_figures/fig3_c5d.py	$R/CONUS_storage_fork/eval/grl_figs/intermediate/c5_o50_20261113/kit_d/fig3_c5d.py	auto			
+08_figures/fig4_c5d.py	$R/CONUS_storage_fork/eval/grl_figs/intermediate/c5_o50_20261113/kit_d/fig4_c5d.py	auto			
+08_figures/figs_only_c5d.py	$R/CONUS_storage_fork/eval/grl_figs/intermediate/c5_o50_20261113/kit_d/figs_only_c5d.py	auto			
+08_figures/kit_h.py	$R/CONUS_storage_fork/eval/grl_figs/intermediate/c5_o50_20261113/kit_d/kit_h.py	auto			
+08_figures/kit_j.py	$R/CONUS_storage_fork/eval/grl_figs/intermediate/c5_o50_20261113/kit_d/kit_j.py	auto			
+08_figures/combo_e.py	$R/CONUS_storage_fork/eval/grl_figs/intermediate/c5_o50_20261113/kit_d/combo_e.py	auto			
+08_figures/jw.py	$R/CONUS_storage_fork/eval/grl_figs/intermediate/c5_o50_20261113/kit_d/jw.py	auto			
+08_figures/jw_fig_tt_e.py	$R/CONUS_storage_fork/eval/grl_figs/intermediate/c5_o50_20261113/kit_d/jw_fig_tt_e.py	auto			
+08_figures/cmaps_d.py	$R/CONUS_storage_fork/eval/grl_figs/intermediate/c5_o50_20261113/kit_d/cmaps_d.py	auto			
+08_figures/cmaps_b.py	$R/CONUS_storage_fork/eval/grl_figs/intermediate/c5_o50_20261113/kit_d/cmaps_b.py	auto			
+08_figures/excl_d.py	$R/CONUS_storage_fork/eval/grl_figs/intermediate/c5_o50_20261113/kit_d/excl_d.py	auto			
+08_figures/ipcfg.py	$R/CONUS_storage_fork/eval/grl_figs/intermediate/c5_o50_20261113/kit_d/ipcfg.py	auto			
+08_figures/ipx.py	$R/CONUS_storage_fork/eval/grl_figs/intermediate/c5_o50_20261113/kit_d/ipx.py	auto			
+08_figures/grl_common.py	$R/CONUS_storage_fork/eval/grl_figs/grl_common.py	auto			
+08_figures/grl2.py	$R/CONUS_storage_fork/eval/grl_figs/grl2.py	auto			
+08_figures/grl_tag.py	$R/CONUS_storage_fork/eval/grl_figs/grl_tag.py	auto			
+08_figures/prepare_kit.py	-	new	replaces the stage_kit*.py copy chain: builds the kit tables from the scorer outputs		CONUS_storage_fork/eval/grl_figs/intermediate/c5_o50_20261113/code/prepare_kit.py
+08_figures/mk_captions_d.py	$R/CONUS_storage_fork/eval/grl_figs/intermediate/c5_o50_20261113/code/mk_captions_d.py	auto			
+08_figures/inputs/eco_l1_sites.csv	$R/CONUS_storage_fork/eval/grl_figs/intermediate/c5_o50_20261113/kit_d/eco_l1_sites.csv	raw			
+08_figures/inputs/eco_l1_conus_albers.json	$R/CONUS_storage_fork/eval/grl_figs/intermediate/c5_o50_20261113/kit_d/eco_l1_conus_albers.json	raw			
+08_figures/inputs/conus_outline_albers.json	$R/CONUS_storage_fork/eval/grl_figs/intermediate/c5_o50_20261113/kit_d/conus_outline_albers.json	raw			
+08_figures/inputs/us_states_rings.json	$R/CONUS_testing/data/us_states_rings.json	raw			
+08_figures/captions_c5_o50_20261113d.md	$R/CONUS_storage_fork/eval/grl_figs/intermediate/c5_o50_20261113/captions_c5_o50_20261113d.md	raw			
+.gitignore	-	new			
+CITATION.cff	-	new			
+EXCLUDED.md	-	new			
+LICENSE	-	new			
+PROVENANCE.md	-	new			
+README.md	-	new			
+tools/deploy.py	-	new			
+tools/release_build/build_release.py	-	new			
+tools/release_build/hand_edits.py	-	new			
+tools/release_build/manifest.tsv	-	new			
+tools/release_build/relocations.tsv	-	new			
+tools/release_build/rewrite_paths.py	-	new			
+tools/release_build/roots.tsv	-	new			
+bin/run	-	new			
+bin/submit	-	new			
+config/paths.env.example	-	new			
+05_training/submit_training.sh	-	new			
+05_training/train.sh	-	new			
+tests/smoke/RESULT.md	-	new			
+tests/smoke/compare.py	-	new			
+tests/smoke/expected_md5.tsv	-	new			
+tests/smoke/inputs_eval.txt	-	new			
+tests/smoke/link_inputs.sh	-	new			
+tests/smoke/run_smoke.sh	-	new			
+tests/smoke/static_checks.py	-	new			
+docs/CODE_NOTES.md	-	new			
+docs/DATA_LAYOUT.md	-	new			
+docs/DATA_SOURCES.md	-	new			
+docs/KNOWN_LIMITS.md	-	new			
+docs/OPEN_ITEMS.md	-	new			
+06_predictions/predict.sh	-	new			
+06_predictions/submit_predictions.sh	-	new			
+environment/README.md	-	new			
+environment/graph_delineator/requirements-frozen.txt	-	new			
+environment/half/requirements-frozen.txt	-	new			
+environment/cds/requirements-frozen.txt	-	new			
+environment/swot_ml/requirements-frozen.txt	-	new			
+07_evaluation/c_scoring/env.sh	-	new			
+vendor/graph_delineator/UPSTREAM.md	-	new			
+vendor/swot_ml/UPSTREAM.md	-	new			
+src/swotgat/__init__.py	-	new			
+src/swotgat/http.py	-	new			
+src/swotgat/paths.py	-	new			
+docs/PIPELINE.md	-	new			
+tools/check_docstrings.py	-	new			
+tests/unit/FAULT_INJECTION.md	-	new	unit tests		
+tests/unit/PYTEST_OUTPUT.txt	-	new	unit tests		
+tests/unit/README.md	-	new	unit tests		
+tests/unit/_equivalence_worker.py	-	new	unit tests		
+tests/unit/conftest.py	-	new	unit tests		
+tests/unit/fault_injection.py	-	new	unit tests		
+tests/unit/test_area_scaling_and_loss.py	-	new	unit tests		
+tests/unit/test_data.py	-	new	unit tests		
+tests/unit/test_graph_attention.py	-	new	unit tests		
+tests/unit/test_recurrent_and_fusion.py	-	new	unit tests		
+tests/unit/test_release_equivalence.py	-	new	unit tests		
+tests/unit/test_rule_engines.py	-	new	unit tests		
+tests/unit/test_rule_simulator.py	-	new	unit tests		
+tests/unit/test_scoring.py	-	new	unit tests		
+environment/tests/requirements.txt	-	new	unit tests		
+tests/smoke/expected/num_c5d_fig1.json	$R/CONUS_storage_fork/eval/grl_figs/intermediate/c5_o50_20261113/kit_d/num_c5d_fig1.json	raw	reference values for the smoke test		

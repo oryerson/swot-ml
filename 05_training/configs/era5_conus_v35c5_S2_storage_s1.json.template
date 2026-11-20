@@ -1,0 +1,250 @@
+{
+ "data_root": "${SWOTGAT_WORK}/CONUS",
+ "zarr_dir": "${SWOTGAT_WORK}/CONUS/zarr_store_vd2026_halfexact_v35",
+ "cache_dir": "${SWOTGAT_WORK}/CONUS_storage_fork/eval/v35_launch/_cache",
+ "attributes_file": "${SWOTGAT_WORK}/CONUS/attributes/static_conus_storage_fixgdw_v35_g4.parquet",
+ "train_basin_file": "${SWOTGAT_WORK}/CONUS/basin_lists/storage/train_nodes_g_v35.csv",
+ "test_basin_file": "${SWOTGAT_WORK}/CONUS/basin_lists/storage/test_nodes_g_v35.csv",
+ "graph_network_file": "${SWOTGAT_WORK}/CONUS/metadata/graphs_conus_v35.json",
+ "target_basin_files": {
+  "dv_SWOTAE": "${SWOTGAT_WORK}/CONUS/basin_lists/fallback/dv_SWOTAE_vd2026_fb_g_v35.csv"
+ },
+ "valid_basin_file": "${SWOTGAT_WORK}/CONUS/basin_lists/storage/valid_nodes_g_v35.csv",
+ "fallback_targets": {
+  "dv_SWOTAE": {
+   "source": "dv_staticPLD",
+   "weight": 1.0,
+   "subsets": [
+    "train"
+   ]
+  }
+ },
+ "area_scaled_targets": {
+  "dv_SWOTAE": "lake_area_km2"
+ },
+ "rolling_mean_vars": [],
+ "add_doy_features": false,
+ "rereference_to_median": [
+  "dv_SWOTAE",
+  "dv_staticPLD",
+  "dv_river"
+ ],
+ "rereference_window": [
+  "2023-01-01T00:00:00",
+  "2026-09-30T00:00:00"
+ ],
+ "target_drop_masks": {
+  "dv_river": "${SWOTGAT_WORK}/CONUS/basin_lists/swotqc/drop_river_paper_min_present_t9b_v35.parquet"
+ },
+ "features": {
+  "dynamic": {
+   "era5": [
+    "ssrd_mean",
+    "strd_mean",
+    "ro_mean",
+    "sro_mean",
+    "e_mean",
+    "tp_mean",
+    "sp_mean",
+    "d2m_mean",
+    "t2m_mean",
+    "fal_mean"
+   ]
+  },
+  "static": [
+   "water_area_km2",
+   "lake_area_km2",
+   "reach_area_km2",
+   "dis_m3_pyr",
+   "dis_m3_pmn",
+   "dis_m3_pmx",
+   "run_mm_syr",
+   "inu_pc_smn",
+   "inu_pc_smx",
+   "inu_pc_slt",
+   "lka_pc_sse",
+   "dor_pc_pva",
+   "ria_ha_ssu",
+   "riv_tc_ssu",
+   "gwt_cm_sav",
+   "ele_mt_sav",
+   "ele_mt_smn",
+   "ele_mt_smx",
+   "slp_dg_sav",
+   "sgr_dk_sav",
+   "clz_cl_smj",
+   "cls_cl_smj",
+   "tmp_dc_syr",
+   "tmp_dc_smn",
+   "tmp_dc_smx",
+   "pre_mm_syr",
+   "pet_mm_syr",
+   "aet_mm_syr",
+   "ari_ix_sav",
+   "snw_pc_syr",
+   "snw_pc_smx",
+   "glc_cl_smj",
+   "pnv_cl_smj",
+   "wet_cl_smj",
+   "wet_pc_sg1",
+   "wet_pc_sg2",
+   "for_pc_sse",
+   "crp_pc_sse",
+   "pst_pc_sse",
+   "ire_pc_sse",
+   "gla_pc_sse",
+   "prm_pc_sse",
+   "pac_pc_sse",
+   "tbi_cl_smj",
+   "tec_cl_smj",
+   "fmh_cl_smj",
+   "fec_cl_smj",
+   "cly_pc_sav",
+   "slt_pc_sav",
+   "snd_pc_sav",
+   "soc_th_sav",
+   "swc_pc_syr",
+   "lit_cl_smj",
+   "kar_pc_sse",
+   "ero_kh_sav",
+   "pop_ct_ssu",
+   "ppd_pk_sav",
+   "urb_pc_sse",
+   "nli_ix_sav",
+   "rdd_mk_sav",
+   "hft_ix_s93",
+   "hft_ix_s09",
+   "gad_id_smj",
+   "gdp_ud_sav",
+   "gdp_ud_ssu",
+   "hdi_ix_sav",
+   "is_reservoir",
+   "dam_has_gdw",
+   "dam_cap_mcm",
+   "dam_hgt_m",
+   "dam_depth_m",
+   "dam_dor_pc",
+   "dam_cap_per_uparea",
+   "use_elec",
+   "use_irri",
+   "use_fcon",
+   "use_supp",
+   "use_recr",
+   "use_navi",
+   "merit_uparea_km2"
+  ],
+  "target": [
+   "dv_river",
+   "dv_SWOTAE"
+  ]
+ },
+ "time_gaps": {
+  "era5": false
+ },
+ "precomp_scaling": true,
+ "dynamic_encoding": {
+  "categorical": {},
+  "bitmask": {}
+ },
+ "static_encoding": {
+  "categorical": {
+   "clz_cl_smj": [],
+   "cls_cl_smj": [],
+   "glc_cl_smj": [],
+   "pnv_cl_smj": [],
+   "wet_cl_smj": [],
+   "tbi_cl_smj": [],
+   "tec_cl_smj": [],
+   "fmh_cl_smj": [],
+   "fec_cl_smj": [],
+   "lit_cl_smj": []
+  },
+  "bitmask": {}
+ },
+ "log_norm_cols": [
+  "water_area_km2",
+  "lake_area_km2",
+  "reach_area_km2",
+  "dam_cap_mcm",
+  "dam_cap_per_uparea",
+  "dam_dor_pc",
+  "merit_uparea_km2"
+ ],
+ "no_norm_cols": [],
+ "range_norm_cols": [],
+ "in_memory": false,
+ "train_date_range": [
+  "2023-01-01",
+  "2026-09-30"
+ ],
+ "validate_date_range": [
+  "2023-01-01",
+  "2026-09-30"
+ ],
+ "test_date_range": [
+  "2023-01-01",
+  "2026-09-30"
+ ],
+ "clip_feature_range": {},
+ "value_filters": [],
+ "exclude_target_from_index": [],
+ "data_subset": "train",
+ "target_nodes_per_batch": 12000,
+ "candidate_pool_size": 10,
+ "shuffle": true,
+ "num_workers": 12,
+ "pin_memory": false,
+ "drop_last": true,
+ "dataset_type": "graph",
+ "sequence_length": 365,
+ "model_args": {
+  "hidden_size": 128,
+  "dropout": 0.3,
+  "head": "gmm",
+  "seq2seq": true,
+  "seed": 1,
+  "name": "sf_grnn",
+  "k_hops": 5,
+  "num_heads": 4,
+  "return_weights": false,
+  "supervised_attn": false,
+  "static_dropout": 0.2,
+  "use_obs_memory": true
+ },
+ "max_training_steps": 50000,
+ "max_training_hours": 27,
+ "log_every_n_steps": 5000,
+ "max_validation_steps": 300,
+ "warmup_steps": 1000,
+ "initial_lr": 0.0001,
+ "final_lr": 5e-06,
+ "max_grad_norm": 1.0,
+ "step_kwargs": {
+  "loss_name": "gmm_nll",
+  "target_weights": {
+   "dv_river": 1.0,
+   "dv_SWOTAE": 1.0
+  },
+  "corr_keys": {},
+  "fallback_weights": {
+   "dv_SWOTAE": 1.0
+  },
+  "burn_in_steps": 90,
+  "beta_nll": 0.0
+ },
+ "optimizer_name": "adamw",
+ "weight_decay": 0.01,
+ "parameter_search_grid": {},
+ "quiet": true,
+ "log": true,
+ "input_history_days": 365,
+ "seed_sampler": true,
+ "remat_level": 3,
+ "_v21_note": "v3.5 C5 (era5_conus_v35c5_S2_storage_s1): C2's launched config (long memory ['lm_up_ssi12', 'lm_up_ssi3'], from scratch) with A365's two recipe changes (sequence_length 365, remat_level 3) = C4 + long memory. Owen 2026-10-28. C2 = v3.5 C2: C1 + long-memory inputs ['lm_up_ssi12', 'lm_up_ssi3'] from ${SWOTGAT_WORK}/CONUS_storage_fork/features/longmem_v35 (LM_SUBSET_v35.json), from scratch, A180's recipe (seq 180, burn-in 90, history 365, 50k steps). C1 = v3.5 C1 (era5_conus_v35c1_S2_storage_s1): A180's recipe (seq 180, burn-in 90, history 365) on graph v3.5, its store/statics/lists (train everywhere: no spatial holdout; T9b mask kept), + static merit_uparea_km2 (log-normalised). md5: {\"graph\": \"c580577d7581bbfb975c261bea609051\", \"statics\": \"a146e7dcaf807013ca53d34d5eee7023\", \"train\": \"1f9f7277aff50ecd687736bd567c6e26\", \"valid\": \"56f67b7e7974d1b4fc64558f3f32fa89\", \"test\": \"847f82eddb62dca369ccb553c5c0a26b\", \"fallback\": \"8282d03155b69afaf0646f3911c0781d\", \"river_mask\": \"47cfebc67fc174af686de6e6fa98063a\", \"store_groups_zarr_json\": \"8215dada7beb42a4e2b2c55f04cc2e48\"}",
+ "extra_dynamic_store": "${SWOTGAT_WORK}/CONUS_storage_fork/features/longmem_v35",
+ "extra_dynamic_vars": [
+  "lm_up_ssi12",
+  "lm_up_ssi3"
+ ],
+ "extra_dynamic_source": "era5"
+}

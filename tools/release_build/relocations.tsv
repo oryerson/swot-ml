@@ -1,0 +1,8 @@
+# original path or folder	where it lives in the release (REPO/<path>) or which variable holds it (ENV/<NAME>)
+$R/CONUS_storage_fork/eval/v35_launch/stage_src_v35	REPO/vendor/swot_ml/src
+$R/swot-ml/src	REPO/vendor/swot_ml/src
+$R/CONUS_storage_fork/eval/graph_v3/src_v34	REPO/vendor/graph_delineator/src
+$R/graph_delineator/src	REPO/vendor/graph_delineator/src
+$R/swot-ml/.venv/bin/python	ENV/PYTHON
+$R/swot-ml/.venv/bin/python3	ENV/PYTHON
+$R/graph_delineator/.venv/bin/python	ENV/DELINEATOR_PYTHON

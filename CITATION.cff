@@ -1,0 +1,52 @@
+# Fill in the fields marked TODO before publication.
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper and this repository."
+title: "SWOT-GAT: code for reservoir storage hindcasts from a graph-attention LSTM trained on SWOT"
+type: software
+authors:
+  - family-names: Ryerson
+    given-names: Owen
+    affiliation: University of Massachusetts Amherst
+  # TODO: co-authors, in the order agreed for the paper
+repository-code: "https://github.com/Fluvial-UMass/swot-gat"
+version: "1.0.0"          # TODO: set at release
+date-released: "2026-01-01"   # TODO: set at release
+license: "TODO"           # see LICENSE
+# doi: TODO (Zenodo DOI of the code release)
+keywords:
+  - SWOT
+  - reservoir storage
+  - graph neural network
+  - LSTM
+  - hindcast
+  - ERA5-Land
+preferred-citation:
+  type: article
+  title: "TODO: paper title"
+  authors:
+    - family-names: Ryerson
+      given-names: Owen
+  journal: "Geophysical Research Letters"
+  year: 2026            # TODO
+  # doi: TODO
+references:
+  - type: software
+    title: "swot-ml"
+    authors:
+      - family-names: Langhorst
+        given-names: Ted
+    url: "https://github.com/Fluvial-UMass/swot-ml"
+  - type: software
+    title: "graph_delineator"
+    authors:
+      - family-names: Langhorst
+        given-names: Ted
+    url: "https://github.com/tedlanghorst/graph_delineator"
+  - type: software
+    title: "HALF v1.0"
+    authors:
+      - family-names: Wang
+        given-names: Jida
+      - family-names: Trudel
+        given-names: Mélanie
+    doi: "10.5281/zenodo.20782248"

@@ -1,0 +1,5 @@
+# NAME	original absolute prefix on the Unity cluster (first row must be WORK)
+WORK	/work/pi_casey_umass_edu/Owen/Reservoirs
+NAS_ICE	/nas/cee-ice
+NAS_WATER	/nas/cee-water
+WORK_FS	/work/pi_casey_umass_edu

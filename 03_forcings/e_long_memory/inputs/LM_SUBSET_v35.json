@@ -1,0 +1,151 @@
+{
+ "created_utc": "2026-10-26T12:28:09Z",
+ "prereg": "eval/featscreen_v2/lmrank/PREREG_wy8509.md",
+ "prereg_sha256": "cb017bddb43fe06356ad7b6fcf1515349d5e50c96f5d2db543b5b9b33bf3159e",
+ "subset": [
+  "lm_up_ssi12",
+  "lm_up_ssi3"
+ ],
+ "n": 2,
+ "stop_reason": "best gain < 0.005 (lm_up_spei12 +0.0006)",
+ "steps": [
+  {
+   "step": 1,
+   "input": "lm_up_ssi12",
+   "cv_r2": 0.295645,
+   "gain": 0.068633
+  },
+  {
+   "step": 2,
+   "input": "lm_up_ssi3",
+   "cv_r2": 0.301343,
+   "gain": 0.005698
+  }
+ ],
+ "base": {
+  "model": "A180 (v22a180 S1+S2, step_050000, 1984-2009 r3_8409)",
+  "cv_r2": 0.227012
+ },
+ "final_cv_r2": 0.301343,
+ "all32_cv_r2": 0.298097,
+ "split": {
+  "all": {
+   "base": 0.227,
+   "final": 0.3013,
+   "all32": 0.2981
+  },
+  "snow": {
+   "base": 0.1903,
+   "final": 0.3314,
+   "all32": 0.3362
+  },
+  "other": {
+   "base": 0.2526,
+   "final": 0.2892,
+   "all32": 0.2775
+  },
+  "dor_ge_0_1": {
+   "base": 0.2347,
+   "final": 0.3094,
+   "all32": 0.3048
+  },
+  "dor_lt_0_1": {
+   "base": 0.0788,
+   "final": 0.1229,
+   "all32": 0.0824
+  }
+ },
+ "signs": [
+  {
+   "feature": "M",
+   "coef_all": 0.21160685083048006,
+   "sign_all": 1,
+   "signs_by_fold": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "sign_flips": false,
+   "median_r_wy": null
+  },
+  {
+   "feature": "lm_up_ssi12",
+   "coef_all": 0.2314897030424274,
+   "sign_all": 1,
+   "signs_by_fold": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "sign_flips": false,
+   "median_r_wy": 0.5402777161640286
+  },
+  {
+   "feature": "lm_up_ssi3",
+   "coef_all": 0.16853169628934137,
+   "sign_all": 1,
+   "signs_by_fold": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "sign_flips": false,
+   "median_r_wy": 0.5978594998505382
+  }
+ ],
+ "rule": "forward selection from [M] over the 32 longmem_vd2026 inputs; add while best CV gain >= 0.005; max 8; ties (CV R^2 at 1e-6) alphabetical",
+ "window": "WY1985-2009, months with an A180 prediction",
+ "reservoirs": 438,
+ "wy_rows": 9256,
+ "wy_filter_check": {
+  "reservoirs_with_truth": 469,
+  "buggy_reservoirs": 469,
+  "fixed_reservoirs": 438,
+  "buggy_wy_rows": 11725,
+  "buggy_wy_rows_without_truth": 2016,
+  "fixed_wy_rows": 9256
+ },
+ "candidate_values": "eval/levelhead/screen/longmem_monthly.parquet (longmem_vd2026 numerics, v1-graph upstream sets); longmem_v35 sets values",
+ "input_md5": {
+  "eval/levelhead/screen/longmem_monthly.parquet": "66d8e1071bdc3975755e3d19349c9165",
+  "features/longmem_vd2026/manifest.json": "83204b6f8cd3fd2fa748185156201365",
+  "testsets/regime3_full_1980_2020/truth_clean.parquet": "3bacd5c839a0eae6bb88ec535156abe1",
+  "testsets/regime3_full_1980_2020/sites.csv": "3d27655b432e6266899faf88eca21979",
+  "features/candscreen_v1/climatology.parquet": "ad274b39b25ba6d021f55d92606a459b",
+  "features/candscreen_v1/lmup_v22_monthly.parquet": "447a7a2da45b2b5b0e1b807a02ad9962"
+ },
+ "window_selection": "WY1985-2009 (out of sample for the 2010-20 C2/C3 decision)",
+ "prediction_md5": {
+  "eval/featscreen_v2/lmrank/pred/era5_conus_v22a180_S1_storage_20261020_032604_step_050000_r3_8409.parquet": "be7706481a87e8be1a5b329f9a3cadd7",
+  "eval/featscreen_v2/lmrank/pred/era5_conus_v22a180_S2_storage_s1_20261020_032604_step_050000_r3_8409.parquet": "00f15c455a7b20dafbee3f456b280c30"
+ },
+ "pick_2010_20": [
+  "lm_up_lk6"
+ ],
+ "same_as_2010_20": false,
+ "spearman_single_gains_vs_2010_20": 0.9355,
+ "lm_up_lk6_gain_here": 0.065645,
+ "decision": {
+  "applied_utc": "2026-10-26T12:29:16Z",
+  "rule": "PREREG_wy8509.md, Decision: the WY1985-2009 pick differs from [\"lm_up_lk6\"], so the new subset is written here and the old file moved to superseded/",
+  "source": "eval/featscreen_v2/lmrank/LM_SUBSET_v35_wy8509.json",
+  "source_sha256": "af2e964fba38cc71f291884ea59fdb76290c108afdb829f0f88d71d95d83c535",
+  "supersedes": {
+   "path": "eval/featscreen_v2/lmrank/superseded/LM_SUBSET_v35.json",
+   "sha256": "db2cb241d966e6b6a7a2f9c494966d83ec4079c1f276a87f5dc083cddefd6c51",
+   "subset": [
+    "lm_up_lk6"
+   ],
+   "window": "WY2010-2020",
+   "prereg": "eval/featscreen_v2/lmrank/PREREG.md"
+  },
+  "values_from": "features/longmem_v35 (all 32 inputs, graph v3.5; READY.json md5 a52f78435a1af71796c2a53b15c16e26)",
+  "c2_gate_for_subset": "out/wy8509/check_pred85.json (gate)"
+ }
+}

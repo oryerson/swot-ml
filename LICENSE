@@ -1,0 +1,16 @@
+LICENCE: TO BE DECIDED BEFORE PUBLICATION
+
+This repository is a staged release that has not been published.
+
+No licence has been chosen yet. Until one is, all rights are reserved by the
+authors, and this copy must not be redistributed.
+
+What has to be settled (see docs/OPEN_ITEMS.md):
+
+  * vendor/swot_ml and vendor/graph_delineator are derived from repositories
+    that carry no licence file (Fluvial-UMass/swot-ml and
+    tedlanghorst/graph_delineator). Their author must agree to a licence
+    before this code is published.
+  * The licence chosen there should be used for the whole repository.
+
+vendor/half_v1 is distributed under its own MIT licence (vendor/half_v1/LICENSE).

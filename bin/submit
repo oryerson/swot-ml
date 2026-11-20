@@ -1,0 +1,29 @@
+#!/bin/bash
+# Submit one pipeline script as a Slurm job, with the flags from config/paths.env.
+#
+#   bin/submit cpu|gpu [sbatch options] -- [bin/run options] <path in this repository> [script arguments]
+#
+# Examples:
+#   bin/submit cpu -c 16 --mem=128G -t 4:00:00 -- 03_forcings/e_long_memory/build_longmem_v35.py --workers 8
+#   bin/submit cpu --array=0-101%12 -c 4 --mem=32G -t 12:00:00 -- 01_graph/delineate_basin_v34.py \
+#       --array-index '$SLURM_ARRAY_TASK_ID' ...
+#   bin/submit cpu -c 4 --mem=48G -t 1:00:00 -- --python DELINEATOR_PYTHON 01_graph/apply_v35.py ...
+#
+# Everything after "--" is handed to bin/run inside the job. Quote '$SLURM_ARRAY_TASK_ID'
+# so that it is expanded in the job, not in your shell.
+set -eo pipefail
+: "${SWOTGAT_REPO:?run 'source config/paths.env' first}"
+kind=$1; shift
+case $kind in
+  cpu) flags=$SWOTGAT_SBATCH_CPU ;;
+  gpu) flags=$SWOTGAT_SBATCH_GPU ;;
+  *) echo "usage: bin/submit cpu|gpu [sbatch options] -- <script> [arguments]"; exit 2 ;;
+esac
+opts=()
+while [ $# -gt 0 ] && [ "$1" != "--" ]; do opts+=("$1"); shift; done
+[ "${1:-}" = "--" ] || { echo "bin/submit: missing '--' before the script"; exit 2; }
+shift
+mkdir -p "$SWOTGAT_WORK/logs"
+# shellcheck disable=SC2086  # $flags holds several words on purpose
+name=swotgat; for a in "$@"; do case $a in *.py) name=$(basename "$a" .py); break ;; esac; done
+sbatch $flags "${opts[@]}" -o "$SWOTGAT_WORK/logs/%x_%j.log" -J "$name" --wrap "$SWOTGAT_REPO/bin/run $*"

@@ -1,0 +1,241 @@
+key,group,node,name,decision,op,why
+hand-USGS-05227500,hand,USGS-05227500,"MISSISSIPPI RIVER AT AITKIN, MN",reject,none,not moved: Owen 2026-10-22 'do not move the physical location of any gauges'
+hand-USGS-06024450,hand,USGS-06024450,Big Hole River bl Big Lake Cr at Wisdom MT,reject,none,not moved: Owen 2026-10-22 'do not move the physical location of any gauges'
+hand-USGS-05541710,hand,USGS-05541710,"AUX SABLE CREEK NEAR MORRIS, IL",reject,none,not moved: Owen 2026-10-22 'do not move the physical location of any gauges'
+hand-USGS-03217424,hand,USGS-03217424,Scioto River at Kenton OH,reject,none,not moved: Owen 2026-10-22 'do not move the physical location of any gauges'
+hand-USGS-01121000,hand,USGS-01121000,"MOUNT HOPE RIVER NEAR WARRENVILLE, CT",reject,none,not moved: Owen 2026-10-22 'do not move the physical location of any gauges'
+hand-USGS-08062700,hand,USGS-08062700,"Trinity Rv at Trinidad, TX",reject,none,not moved: Owen 2026-10-22 'do not move the physical location of any gauges'
+hand-USGS-03266000,hand,USGS-03266000,Stillwater River at Englewood OH,reject,none,not moved: Owen 2026-10-22 'do not move the physical location of any gauges'
+hand-USGS-01085500,hand,USGS-01085500,"CONTOOCOOK R BL HOPKINTON DAM AT W HOPKINTON, NH",reject,none,not moved: Owen 2026-10-22 'do not move the physical location of any gauges'
+hand-USGS-09399400,hand,USGS-09399400,"JACKS CANYON CREEK NEAR WINSLOW, AZ",reject,none,not moved: Owen 2026-10-22 'do not move the physical location of any gauges'
+hand-USGS-07144050,hand,USGS-07144050,"EMMA C AT SEDGWICK, KS",reject,none,not moved: Owen 2026-10-22 'do not move the physical location of any gauges'
+hand-USGS-11355500,hand,USGS-11355500,HAT C NR HAT CREEK CA,reject,none,not moved: Owen 2026-10-22 'do not move the physical location of any gauges'
+hand-USGS-03333450,hand,USGS-03333450,"WILDCAT CREEK NEAR JEROME, IN",reject,none,not moved: Owen 2026-10-22 'do not move the physical location of any gauges'
+hand-USGS-03348350,hand,USGS-03348350,"PIPE CREEK AT FRANKTON, IN",reject,none,not moved: Owen 2026-10-22 'do not move the physical location of any gauges'
+hand-USGS-05357335,hand,USGS-05357335,"BEAR RIVER NEAR MANITOWISH WATERS, WI",reject,none,not moved: Owen 2026-10-22 'do not move the physical location of any gauges'
+hand-USGS-08072760,hand,USGS-08072760,"Langham Ck at W Little York Rd nr Addicks, TX",reject,none,not moved: Owen 2026-10-22 'do not move the physical location of any gauges'
+hand-USGS-01447680,hand,USGS-01447680,"Tunkhannock Creek near Long Pond, PA",reject,none,not moved: Owen 2026-10-22 'do not move the physical location of any gauges'
+snap-USGS-11261500,snap,USGS-11261500,SAN JOAQUIN R A FREMONT FORD BRIDGE CA,accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-07298500,snap,USGS-07298500,"Pr Dog Twn Fk Red Rv nr Brice, TX",accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-06777495,snap,USGS-06777495,"Middle Loup River near Gates, Nebr.",accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-07144200,snap,USGS-07144200,"L ARKANSAS R AT VALLEY CENTER, KS",accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-06449500,snap,USGS-06449500,LITTLE WHITE RIVER NEAR ROSEBUD SD,accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-12395000,snap,USGS-12395000,"Priest River near Priest River, ID",accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-07367690,snap,USGS-07367690,Boeuf River at Ark/La State Line,accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-06479438,snap,USGS-06479438,"BIG SIOUX RIVER NEAR WATERTOWN,SD",accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-05525500,snap,USGS-05525500,"SUGAR CREEK AT MILFORD, IL",accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-03597860,snap,USGS-03597860,"DUCK RIVER AT SHELBYVILLE, TN",accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-06253000,snap,USGS-06253000,"FIVEMILE CREEK NEAR SHOSHONI, WY",accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-10315500,snap,USGS-10315500,"MARYS RV ABV HOT SPGS CK NR DEETH, NV",accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-12323600,snap,USGS-12323600,Silver Bow Creek at Opportunity MT,accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-13052200,snap,USGS-13052200,TETON RIVER AB SOUTH LEIGH CREEK NR DRIGGS ID,accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-02266500,snap,USGS-02266500,"REEDY CREEK NEAR LOUGHMAN, FL",accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-12502500,snap,USGS-12502500,"AHTANUM CREEK AT UNION GAP, WA",accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-03336900,snap,USGS-03336900,"SALT FORK NEAR ST. JOSEPH, IL",accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-01447720,snap,USGS-01447720,"Tobyhanna Creek near Blakeslee, PA",accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-10133980,snap,USGS-10133980,"EAST CANYON CREEK AB EAST CYN RES NR MORGAN, UTAH",accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-03289300,snap,USGS-03289300,"SOUTH ELKHORN CREEK NEAR MIDWAY, KY",accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-02320700,snap,USGS-02320700,"SANTA FE RIVER NEAR GRAHAM, FLA.",accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-03310400,snap,USGS-03310400,"BACON CREEK NEAR PRICEVILLE, KY",accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-08048970,snap,USGS-08048970,"Village Ck at Everman, TX",accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-12112600,snap,USGS-12112600,"BIG SOOS CREEK ABOVE HATCHERY NEAR AUBURN, WA",accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-01437349,snap,USGS-01437349,BASHER KILL BLW BASHAKILL MARSH AT WESTBROOKVILLE,accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-08072300,snap,USGS-08072300,"Buffalo Bayou nr Katy, TX",accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-05473450,snap,USGS-05473450,"Big Creek North of Mount Pleasant, IA",accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-03255349,snap,USGS-03255349,Mill Creek at East Sharon Rd at Sharonville OH,accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-03353910,snap,USGS-03353910,"EAST FORK WHITE LICK CREEK AT MOORESVILLE, IN",accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-03144816,snap,USGS-03144816,South Fork Licking River at Kirkersville OH,accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-03228689,snap,USGS-03228689,Blacklick Creek near Pickerington OH,accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-08115000,snap,USGS-08115000,"Big Ck nr Needville, TX",accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-02300882,snap,USGS-02300882,NORTH PRONG ALAFIA RIVER NEAR NICHOLS FL,accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-03266560,snap,USGS-03266560,Mad River at West Liberty OH - 03266560,accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-01163200,snap,USGS-01163200,"OTTER RIVER AT OTTER RIVER, MA",accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-03360600,snap,USGS-03360600,"SMOTHERS CREEK NR PLAINVILLE, IN",accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-08072680,snap,USGS-08072680,"S Mayde Ck at Heathergold Dr nr Addicks, TX",accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-01199050,snap,USGS-01199050,"SALMON CREEK AT LIME ROCK, CT",accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-01381500,snap,USGS-01381500,Whippany River at Morristown NJ,accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-01095220,snap,USGS-01095220,"STILLWATER RIVER NEAR STERLING, MA",accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-01104460,snap,USGS-01104460,"STONY BROOK AT RT 20 AT WALTHAM, MA",accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-02406930,snap,USGS-02406930,"SHIRTEE CREEK NEAR ODENA, ALABAMA",accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-02461192,snap,USGS-02461192,"VALLEY CREEK AT AVE W NEAR ENSLEY, AL",accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-02312667,snap,USGS-02312667,"SHADY BROOK NEAR SUMTERVILLE, FL",accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+snap-USGS-13210831,snap,USGS-13210831,SOUTH MIDDLETON DRAIN AT MIDDLETON ID,accept,none,v3.4 re-snap kept (Owen 2026-10-22: 'ok keep these changes')
+refov-7420531752,refov,7420531752,,accept,override_reference,graph right: the outlet cell one cell beyond the PLD outline is where a second arm or tributary of the impoundment joins at the dam
+refov-7420854652,refov,7420854652,STRAIGHT LAKE,accept,override_reference,graph right: the outlet cell one cell beyond the PLD outline is where a second arm or tributary of the impoundment joins at the dam
+refov-7820018262,refov,7820018262,,accept,override_reference,graph right: the outlet cell one cell beyond the PLD outline is where a second arm or tributary of the impoundment joins at the dam
+refov-7420101632,refov,7420101632,BLACK HOLLOW RESERVOIR,accept,override_reference,graph right: the outlet cell one cell beyond the PLD outline is where a second arm or tributary of the impoundment joins at the dam
+refov-7421004382,refov,7421004382,,accept,override_reference,graph right: the outlet cell one cell beyond the PLD outline is where a second arm or tributary of the impoundment joins at the dam
+refov-7420529872,refov,7420529872,WHITETAIL RESERVOIR,accept,override_reference,graph right: the outlet cell one cell beyond the PLD outline is where a second arm or tributary of the impoundment joins at the dam; GDW dam catchment 50.0 km2
+refov-7310123892,refov,7310123892,FORGE POND,accept,override_reference,graph right: the outlet cell one cell beyond the PLD outline is where a second arm or tributary of the impoundment joins at the dam
+refov-7420332862,refov,7420332862,LONE STAR LAKE,accept,override_reference,graph right: the outlet cell one cell beyond the PLD outline is where a second arm or tributary of the impoundment joins at the dam; GDW dam catchment 26.0 km2
+refov-7420175902,refov,7420175902,LAKE LANGSTON,accept,override_reference,graph right: the outlet cell one cell beyond the PLD outline is where a second arm or tributary of the impoundment joins at the dam; GDW dam catchment 15.0 km2
+refov-7420958752,refov,7420958752,WILLIAMSTOWN LAKE,accept,override_reference,graph right: the outlet cell one cell beyond the PLD outline is where a second arm or tributary of the impoundment joins at the dam; GDW dam catchment 22.0 km2
+refov-7320144582,refov,7320144582,,accept,override_reference,graph right: the outlet cell one cell beyond the PLD outline is where a second arm or tributary of the impoundment joins at the dam
+refov-7320352922,refov,7320352922,,accept,override_reference,graph right: the outlet cell one cell beyond the PLD outline is where a second arm or tributary of the impoundment joins at the dam
+refov-7421024112,refov,7421024112,HAMMERTOWN LAKE,accept,override_reference,"graph kept, LOW confidence: GDW dam catchment 4.0 km2 is below both the graph (8.3) and the pour point (5.9)"
+refov-7420520762,refov,7420520762,RATTLESNAKE RESERVOIR,accept,override_reference,graph right: the outlet cell one cell beyond the PLD outline is where a second arm or tributary of the impoundment joins at the dam
+edge-7320041332,edge,7320041332,,reject,conform,"river routed past the lake, as for Owen's 'graph above the lake' rejections: a small Polk County (phosphate district) pond; the creek beside it does not flow through it"
+edge-7320138252,edge,7320138252,"WILLIAM ""BILL"" DANNELLY RESERVOIR",reject,conform,"river routed past the lake, as for Owen's 'graph above the lake' rejections: a side-arm fragment of Dannelly Reservoir; the Alabama River goes to the main reservoir node"
+above-7820019853,above,7820019853,MOSES LAKE,reject,conform,Owen rejected 'keep': the river corridor is taken out of the lake node (lake = its MERIT catchment)
+above-7420930213,above,7420930213,KENTUCKY;KENTUCKY LAKE,reject,conform,Owen rejected 'keep': the river corridor is taken out of the lake node (lake = its MERIT catchment)
+above-7420501102,above,7420501102,SWAN LAKE,reject,conform,Owen rejected 'keep': the river corridor is taken out of the lake node (lake = its MERIT catchment)
+above-7320351722,above,7320351722,,reject,conform,Owen rejected 'keep': the river corridor is taken out of the lake node (lake = its MERIT catchment)
+inflow-7421096182,inflow,7421096182,LAKE LORAMIE;LORAMIE LAKE,accept,conform,"lake node set to what drains to the lake outlet (MERIT D8) (an on-stream lake, not a fragment of a split lake)"
+inflow-7420550242,inflow,7420550242,GASCOYNE LAKE,accept,conform,"lake node set to what drains to the lake outlet (MERIT D8) (an on-stream lake, not a fragment of a split lake)"
+inflow-7420214232,inflow,7420214232,LAKE RAYMOND GARY,accept,conform,"lake node set to what drains to the lake outlet (MERIT D8) (an on-stream lake, not a fragment of a split lake)"
+inflow-7320175082,inflow,7320175082,,reject,none,kept: GDW catchment at the dam (83 km2) supports the graph (89.3) over the MERIT pour point (98.3)
+inflow-7720021743,inflow,7720021743,MEEKS CABIN RESERVOIR,accept,conform,"lake node set to what drains to the lake outlet (MERIT D8); GDW dam catchment 396.0 km2 (an on-stream lake, not a fragment of a split lake)"
+inflow-7510092753,inflow,7510092753,LAKE WEATHERFORD,accept,conform,"lake node set to what drains to the lake outlet (MERIT D8); GDW dam catchment 275.0 km2 (an on-stream lake, not a fragment of a split lake)"
+inflow-7510031722,inflow,7510031722,,accept,conform,"lake node set to what drains to the lake outlet (MERIT D8) (an on-stream lake, not a fragment of a split lake)"
+inflow-7421108742,inflow,7421108742,HANCOCK LAKE,accept,conform,"lake node set to what drains to the lake outlet (MERIT D8) (an on-stream lake, not a fragment of a split lake)"
+inflow-7320031052,inflow,7320031052,LAKE LULU,accept,conform,"lake node set to what drains to the lake outlet (MERIT D8) (an on-stream lake, not a fragment of a split lake)"
+inflow-7720028983,inflow,7720028983,,reject,none,kept: Giroux tailings impoundment: GDW catchment (34 km2) supports the graph (36.4) over MERIT (51.4)
+inflow-7510042352,inflow,7510042352,CADDO CREEK LAKE,accept,conform,"lake node set to what drains to the lake outlet (MERIT D8) (an on-stream lake, not a fragment of a split lake)"
+inflow-7421053922,inflow,7421053922,WORSTER LAKE,accept,conform,"lake node set to what drains to the lake outlet (MERIT D8) (an on-stream lake, not a fragment of a split lake)"
+inflow-7420134152,inflow,7420134152,,accept,conform,"lake node set to what drains to the lake outlet (MERIT D8); GDW dam catchment 35.0 km2 (an on-stream lake, not a fragment of a split lake)"
+inflow-7320411442,inflow,7320411442,LAKE CAROLINA,accept,conform,"lake node set to what drains to the lake outlet (MERIT D8) (an on-stream lake, not a fragment of a split lake)"
+inflow-7420150332,inflow,7420150332,SPORTSMAN LAKE,accept,conform,"lake node set to what drains to the lake outlet (MERIT D8) (an on-stream lake, not a fragment of a split lake)"
+inflow-7420207882,inflow,7420207882,,accept,conform,"lake node set to what drains to the lake outlet (MERIT D8); GDW dam catchment 25.0 km2 (an on-stream lake, not a fragment of a split lake)"
+inflow-7420265082,inflow,7420265082,,accept,conform,"lake node set to what drains to the lake outlet (MERIT D8) (an on-stream lake, not a fragment of a split lake)"
+inflow-7720021652,inflow,7720021652,,accept,conform,"lake node set to what drains to the lake outlet (MERIT D8) (an on-stream lake, not a fragment of a split lake)"
+inflow-7420963212,inflow,7420963212,,accept,conform,"lake node set to what drains to the lake outlet (MERIT D8); GDW dam catchment 24.0 km2 (an on-stream lake, not a fragment of a split lake)"
+inflow-7420476842,inflow,7420476842,BLACK DOG LAKE,accept,conform,"lake node set to what drains to the lake outlet (MERIT D8) (an on-stream lake, not a fragment of a split lake)"
+inflow-7420223552,inflow,7420223552,,accept,conform,"lake node set to what drains to the lake outlet (MERIT D8) (an on-stream lake, not a fragment of a split lake)"
+inflow-7420486552,inflow,7420486552,MINNESOTA LAKE,accept,conform,"lake node set to what drains to the lake outlet (MERIT D8) (an on-stream lake, not a fragment of a split lake)"
+inflow-7720010242,inflow,7720010242,MORGAN LAKE,accept,conform,"lake node set to what drains to the lake outlet (MERIT D8); GDW dam catchment 20.0 km2 (an on-stream lake, not a fragment of a split lake)"
+inflow-7420864712,inflow,7420864712,BLACK BEAR LAKE,accept,conform,"lake node set to what drains to the lake outlet (MERIT D8) (an on-stream lake, not a fragment of a split lake)"
+inflow-7510140172,inflow,7510140172,BELLWOOD LAKE,accept,conform,"lake node set to what drains to the lake outlet (MERIT D8) (an on-stream lake, not a fragment of a split lake)"
+inflow-7730022902,inflow,7730022902,,accept,conform,"lake node set to what drains to the lake outlet (MERIT D8) (an on-stream lake, not a fragment of a split lake)"
+inflow-7730013702,inflow,7730013702,,accept,conform,"lake node set to what drains to the lake outlet (MERIT D8) (an on-stream lake, not a fragment of a split lake)"
+inflow-7421115652,inflow,7421115652,,accept,conform,"lake node set to what drains to the lake outlet (MERIT D8) (an on-stream lake, not a fragment of a split lake)"
+inflow-7420078992,inflow,7420078992,LAKE OEHN,accept,conform,"lake node set to what drains to the lake outlet (MERIT D8) (an on-stream lake, not a fragment of a split lake)"
+inflow-7740040622,inflow,7740040622,GRAVEN RESERVOIR,accept,conform,"lake node set to what drains to the lake outlet (MERIT D8) (an on-stream lake, not a fragment of a split lake)"
+inflow-7320137842,inflow,7320137842,,accept,conform,"lake node set to what drains to the lake outlet (MERIT D8) (an on-stream lake, not a fragment of a split lake)"
+inflow-7420097272,inflow,7420097272,WATER SUPPLY AND STORAGE RESERVOIR NUMBER 3,accept,conform,"lake node set to what drains to the lake outlet (MERIT D8) (an on-stream lake, not a fragment of a split lake)"
+inflow-7730020492,inflow,7730020492,TWIN LAKES,accept,conform,"lake node set to what drains to the lake outlet (MERIT D8) (an on-stream lake, not a fragment of a split lake)"
+inflow-7730012912,inflow,7730012912,,accept,conform,"lake node set to what drains to the lake outlet (MERIT D8) (an on-stream lake, not a fragment of a split lake)"
+explain-USGS-13269000,explain,USGS-13269000,SNAKE RIVER AT WEISER ID,accept,none,"explained, no routing fix"
+explain-USGS-13213100,explain,USGS-13213100,SNAKE RIVER AT NYSSA OR,accept,none,"explained, no routing fix"
+explain-USGS-09315000,explain,USGS-09315000,"GREEN RIVER AT GREEN RIVER, UT",accept,none,"explained, no routing fix"
+explain-USGS-13172500,explain,USGS-13172500,SNAKE RIVER NR MURPHY ID,accept,none,"explained, no routing fix"
+explain-USGS-13154500,explain,USGS-13154500,SNAKE RIVER AT KING HILL ID,accept,none,"explained, no routing fix"
+explain-USGS-05558300,explain,USGS-05558300,"ILLINOIS RIVER AT HENRY, IL",accept,none,"explained, no routing fix"
+explain-USGS-05542500,explain,USGS-05542500,"ILLINOIS RIVER AT MORRIS, IL",accept,none,"explained, no routing fix"
+explain-USGS-02223056,explain,USGS-02223056,"OCONEE RIVER AT AVANT MINE, NEAR OCONEE, GA",accept,none,"explained, no routing fix"
+explain-USGS-10302025,explain,USGS-10302025,"WALKER RV NR MOUTH AT WALKER LAKE, NV",accept,none,"explained, no routing fix"
+explain-USGS-09328910,explain,USGS-09328910,"SAN RAFAEL RIVER AT MOUTH NEAR GREEN RIVER, UT",accept,none,"explained, no routing fix"
+explain-USGS-10302002,explain,USGS-10302002,"WALKER RV AT LATERAL 2-A SIPHON NR SCHURZ, NV",accept,none,"explained, no routing fix"
+explain-USGS-10301745,explain,USGS-10301745,"WALKER RV ABV LITTLE DAM NR SCHURZ, NV",accept,none,"explained, no routing fix"
+explain-USGS-10301720,explain,USGS-10301720,"WALKER RV AT PT SITE BLW WEBER RES NR SCHURZ, NV",accept,none,"explained, no routing fix"
+explain-USGS-10301600,explain,USGS-10301600,"WALKER RV ABV WEBER RES NR SCHURZ, NV",accept,none,"explained, no routing fix"
+explain-USGS-10301500,explain,USGS-10301500,"WALKER RV NR WABUSKA, NV",accept,none,"explained, no routing fix"
+explain-USGS-10300600,explain,USGS-10300600,"WALKER RV AT SNYDER LN NR MASON, NV",accept,none,"explained, no routing fix"
+explain-USGS-05537980,explain,USGS-05537980,"DES PLAINES RIVER AT ROUTE 53 AT JOLIET, IL",accept,none,"explained, no routing fix"
+explain-USGS-07368000,explain,USGS-07368000,"Boeuf River near Girard, LA",accept,none,"explained, no routing fix"
+explain-USGS-02355350,explain,USGS-02355350,"ICHAWAYNOCHAWAY CREEK BELOW NEWTON, GA",accept,none,"explained, no routing fix"
+explain-USGS-02354800,explain,USGS-02354800,"ICHAWAYNOCHAWAY CREEK NEAR ELMODEL, GA",accept,none,"explained, no routing fix"
+explain-USGS-07349860,explain,USGS-07349860,"Red Chute Bayou at Sligo, LA",accept,none,"explained, no routing fix"
+explain-USGS-10300000,explain,USGS-10300000,"W WALKER RV NR HUDSON, NV",accept,none,"explained, no routing fix"
+explain-USGS-07288500,explain,USGS-07288500,"BIG SUNFLOWER RIVER AT SUNFLOWER, MS",accept,none,"explained, no routing fix"
+explain-USGS-02431000,explain,USGS-02431000,"TOMBIGBEE RIVER NR FULTON, MS",accept,none,"explained, no routing fix"
+explain-USGS-07288280,explain,USGS-07288280,"BIG SUNFLOWER RIVER NR MERIGOLD, MS",accept,none,"explained, no routing fix"
+explain-USGS-07369700,explain,USGS-07369700,"Bayou Macon nr Kilbourne, LA",accept,none,"explained, no routing fix"
+explain-USGS-07369680,explain,USGS-07369680,"Bayou Macon at Eudora, AR",accept,none,"explained, no routing fix"
+explain-USGS-02312700,explain,USGS-02312700,"OUTLET RIVER AT PANACOOCHEE RETREATS, FL",accept,none,"explained, no routing fix"
+explain-USGS-02296500,explain,USGS-02296500,CHARLIE CREEK NEAR GARDNER FL,accept,none,"explained, no routing fix"
+explain-USGS-02354500,explain,USGS-02354500,"CHICKASAWHATCHEE CREEK AT ELMODEL, GA",accept,none,"explained, no routing fix"
+explain-USGS-07369500,explain,USGS-07369500,"Tensas River at Tendal, LA",accept,none,"explained, no routing fix"
+explain-USGS-02202600,explain,USGS-02202600,"BLACK CREEK NEAR BLITCHTON, GA",accept,none,"explained, no routing fix"
+explain-USGS-07366200,explain,USGS-07366200,"Little Corney Bayou near Lillie, LA",accept,none,"explained, no routing fix"
+explain-USGS-02296260,explain,USGS-02296260,CHARLIE CREEK NEAR CREWSVILLE FL,accept,none,"explained, no routing fix"
+explain-USGS-02312200,explain,USGS-02312200,"LITTLE WITHLACOOCHEE RIVER AT RERDELL, FL",accept,none,"explained, no routing fix"
+explain-USGS-02301300,explain,USGS-02301300,SOUTH PRONG ALAFIA RIVER NEAR LITHIA FL,accept,none,"explained, no routing fix"
+explain-USGS-08407500,explain,USGS-08407500,"PECOS RIVER AT RED BLUFF, NM",accept,none,"explained, no routing fix"
+explain-USGS-08407000,explain,USGS-08407000,"PECOS RIVER AT PIERCE CANYON CROSSING, NM",accept,none,"explained, no routing fix"
+explain-USGS-08406500,explain,USGS-08406500,"PECOS RIVER NEAR MALAGA, NM",accept,none,"explained, no routing fix"
+explain-USGS-08402000,explain,USGS-08402000,"PECOS R AT DAMSITE 3 NR CARLSBAD, NM",accept,none,"explained, no routing fix"
+explain-USGS-08401500,explain,USGS-08401500,"PECOS RIVER BELOW BRANTLEY DAM NEAR CARLSBAD, NM",accept,none,"explained, no routing fix"
+explain-USGS-08396500,explain,USGS-08396500,"PECOS RIVER NEAR ARTESIA, NM",accept,none,"explained, no routing fix"
+explain-USGS-13077000,explain,USGS-13077000,SNAKE RIVER AT NEELEY ID,accept,none,"explained, no routing fix"
+explain-USGS-11370500,explain,USGS-11370500,SACRAMENTO R A KESWICK CA,accept,none,"explained, no routing fix"
+explain-USGS-08353000,explain,USGS-08353000,"RIO PUERCO NEAR BERNARDO, NM",accept,none,"explained, no routing fix"
+explain-USGS-11516530,explain,USGS-11516530,KLAMATH R BL IRON GATE DAM CA,accept,none,"explained, no routing fix"
+explain-USGS-13152500,explain,USGS-13152500,MALAD RIVER NR GOODING ID,accept,none,"explained, no routing fix"
+explain-USGS-13056500,explain,USGS-13056500,HENRYS FORK NR REXBURG ID,accept,none,"explained, no routing fix"
+explain-USGS-06185110,explain,USGS-06185110,Big Muddy Creek nr mouth nr Culbertson MT,accept,none,"explained, no routing fix"
+explain-USGS-11078000,explain,USGS-11078000,SANTA ANA R A SANTA ANA CA,accept,none,"explained, no routing fix"
+explain-USGS-06349500,explain,USGS-06349500,"APPLE CREEK NR MENOKEN, ND",accept,none,"explained, no routing fix"
+explain-USGS-11348500,explain,USGS-11348500,PIT R NR CANBY CA,accept,none,"explained, no routing fix"
+explain-USGS-13068500,explain,USGS-13068500,BLACKFOOT RIVER NR BLACKFOOT ID,accept,none,"explained, no routing fix"
+explain-USGS-07288650,explain,USGS-07288650,"BOGUE PHALIA NR LELAND, MS",accept,none,"explained, no routing fix"
+explain-USGS-02264495,explain,USGS-02264495,"SHINGLE CREEK AT CAMPBELL, FL",accept,none,"explained, no routing fix"
+explain-USGS-07288800,explain,USGS-07288800,"YAZOO RIVER AT REDWOOD, MS",accept,none,"explained, no routing fix"
+explain-USGS-12323800,explain,USGS-12323800,Clark Fork near Galen MT,accept,none,"explained, no routing fix"
+explain-USGS-03265000,explain,USGS-03265000,Stillwater River at Pleasant Hill OH,accept,none,"explained, no routing fix"
+explain-USGS-11051500,explain,USGS-11051500,SANTA ANA R NR MENTONE CA,accept,none,"explained, no routing fix"
+explain-USGS-03330500,explain,USGS-03330500,"TIPPECANOE RIVER AT OSWEGO, IN",accept,none,"explained, no routing fix"
+explain-USGS-07288000,explain,USGS-07288000,"BIG SUNFLOWER RIVER AT CLARKSDALE, MS",accept,none,"explained, no routing fix"
+explain-USGS-01173000,explain,USGS-01173000,"WARE RIVER AT INTAKE WORKS NEAR BARRE, MA",accept,none,"explained, no routing fix"
+explain-USGS-10137300,explain,USGS-10137300,"SOUTH FK OGDEN R BL CAUSEY RES NR HUNTSVILLE, UTAH",accept,none,"explained, no routing fix"
+explain-USGS-02312180,explain,USGS-02312180,"LITTLE WITHLACOOCHEE RIVER NEAR TARRYTOWN, FL",accept,none,"explained, no routing fix"
+explain-USGS-02301150,explain,USGS-02301150,SOUTH PRONG ALAFIA RIVER NEAR FT LONESOME FL,accept,none,"explained, no routing fix"
+explain-USGS-01082000,explain,USGS-01082000,"CONTOOCOOK RIVER AT PETERBOROUGH, NH",accept,none,"explained, no routing fix"
+explain-USGS-05423500,explain,USGS-05423500,"SOUTH BRANCH ROCK RIVER AT WAUPUN, WI",accept,none,"explained, no routing fix"
+explain-USGS-09047500,explain,USGS-09047500,"SNAKE RIVER NEAR MONTEZUMA, CO",accept,none,"explained, no routing fix"
+explain-USGS-13081500,explain,USGS-13081500,SNAKE R NR MINIDOKA ID AT HOWELLS FERRY,accept,none,"explained, no routing fix"
+explain-USGS-08395500,explain,USGS-08395500,"PECOS RIVER NEAR LAKE ARTHUR, NM",accept,none,"explained, no routing fix"
+explain-USGS-06153800,explain,USGS-06153800,"Milk River at Merrill Rd, nr Harlem, MT",accept,none,"explained, no routing fix"
+explain-USGS-11377100,explain,USGS-11377100,SACRAMENTO R AB BEND BRIDGE NR RED BLUFF CA,accept,none,"explained, no routing fix"
+explain-USGS-11523000,explain,USGS-11523000,KLAMATH R A ORLEANS,accept,none,"explained, no routing fix"
+explain-USGS-11520500,explain,USGS-11520500,KLAMATH R NR SEIAD VALLEY CA,accept,none,"explained, no routing fix"
+explain-USGS-11355010,explain,USGS-11355010,PIT R BL PIT NO 1 PH NR FALL RIVER MILLS CA,accept,none,"explained, no routing fix"
+explain-USGS-07141200,explain,USGS-07141200,"PAWNEE R AT ROZEL, KS",accept,none,"explained, no routing fix"
+explain-USGS-06167500,explain,USGS-06167500,Beaver Creek near Hinsdale MT,accept,none,"explained, no routing fix"
+explain-USGS-07226500,explain,USGS-07226500,"UTE CREEK NEAR LOGAN, NM",accept,none,"explained, no routing fix"
+explain-USGS-05517530,explain,USGS-05517530,"KANKAKEE RIVER NR KOUTS, IN",accept,none,"explained, no routing fix"
+explain-USGS-05300000,explain,USGS-05300000,"LAC QUI PARLE RIVER NEAR LAC QUI PARLE, MN",accept,none,"explained, no routing fix"
+explain-USGS-02312558,explain,USGS-02312558,"WITHLACOOCHEE RIVER AT NOBLETON, FL",accept,none,"explained, no routing fix"
+explain-USGS-07144780,explain,USGS-07144780,"NF NINNESCAH R AB CHENEY RE, KS",accept,none,"explained, no routing fix"
+explain-USGS-12431500,explain,USGS-12431500,"LITTLE SPOKANE RIVER NEAR DARTFORD, WA",accept,none,"explained, no routing fix"
+explain-USGS-08041749,explain,USGS-08041749,"Pine Island Bayou abv BI Pump Plant, Beaumont, TX",accept,none,"explained, no routing fix"
+explain-USGS-02312300,explain,USGS-02312300,WITHLACOOCHEE RIVER AT RITAL FL,accept,none,"explained, no routing fix"
+explain-USGS-02311500,explain,USGS-02311500,"WITHLACOOCHEE RIVER NEAR DADE CITY, FL",accept,none,"explained, no routing fix"
+explain-USGS-08041700,explain,USGS-08041700,"Pine Island Bayou nr Sour Lake, TX",accept,none,"explained, no routing fix"
+explain-USGS-02310947,explain,USGS-02310947,"WITHLACOOCHEE RIVER NEAR CUMPRESSCO, FL",accept,none,"explained, no routing fix"
+explain-USGS-01027240,explain,USGS-01027240,"S. Br. Penobscot River nr Canada Falls Lake, Maine",accept,none,"explained, no routing fix"
+explain-USGS-02294491,explain,USGS-02294491,SADDLE CREEK AT STRUCTURE P-11 NEAR BARTOW FL,accept,none,"explained, no routing fix"
+explain-USGS-01095503,explain,USGS-01095503,"NASHUA RIVER, WATER STREET BRIDGE, AT CLINTON, MA",accept,none,"explained, no routing fix"
+explain-USGS-01387000,explain,USGS-01387000,Wanaque River at Wanaque NJ,accept,none,"explained, no routing fix"
+explain-USGS-01374821,explain,USGS-01374821,TITICUS RIVER AT PURDYS STATION NY,accept,none,"explained, no routing fix"
+explain-USGS-05280000,explain,USGS-05280000,"CROW RIVER AT ROCKFORD, MN",accept,none,"explained, no routing fix"
+explain-USGS-09517490,explain,USGS-09517490,CENTENNIAL WASH AT SOUTHERN PACIFIC RAILROAD BRDG,accept,none,"explained, no routing fix"
+explain-USGS-02452505,explain,USGS-02452505,"SIPSEY FORK AT SIPSEY, ALA",accept,none,"explained, no routing fix"
+explain-USGS-01606500,explain,USGS-01606500,"SOUTH BRANCH POTOMAC RIVER NEAR PETERSBURG, WV",accept,none,"explained, no routing fix"
+explain-USGS-14170000,explain,USGS-14170000,"LONG TOM RIVER AT MONROE, OR",accept,none,"explained, no routing fix"
+explain-USGS-03329700,explain,USGS-03329700,"DEER CREEK NEAR DELPHI, IN",accept,none,"explained, no routing fix"
+explain-USGS-03324000,explain,USGS-03324000,"LITTLE RIVER NEAR HUNTINGTON, IN",accept,none,"explained, no routing fix"
+explain-USGS-01402000,explain,USGS-01402000,Millstone River at Blackwells Mills NJ,accept,none,"explained, no routing fix"
+explain-USGS-11465350,explain,USGS-11465350,DRY C NR MOUTH NR HEALDSBURG CA,accept,none,"explained, no routing fix"
+explain-USGS-072638805,explain,USGS-072638805,"Fish Lake Ditch near Altheimer, AR",accept,none,"explained, no routing fix"
+explain-USGS-03220000,explain,USGS-03220000,Mill Creek near Bellepoint OH,accept,none,"explained, no routing fix"
+explain-USGS-05289800,explain,USGS-05289800,"MINNEHAHA CREEK AT HIAWATHA AVE. IN MINNEAPOLIS,MN",accept,none,"explained, no routing fix"
+explain-USGS-03230310,explain,USGS-03230310,Little Darby Creek at West Jefferson OH,accept,none,"explained, no routing fix"
+explain-USGS-08066300,explain,USGS-08066300,"Menard Ck nr Rye, TX",accept,none,"explained, no routing fix"
+explain-USGS-01457000,explain,USGS-01457000,Musconetcong River near Bloomsbury NJ,accept,none,"explained, no routing fix"
+explain-USGS-08169000,explain,USGS-08169000,"Comal Rv at New Braunfels, TX",accept,none,"explained, no routing fix"
+explain-USGS-03102500,explain,USGS-03102500,"Little Shenango River at Greenville, PA",accept,none,"explained, no routing fix"
+explain-USGS-06923500,explain,USGS-06923500,"Bennett Spring at Bennett Springs, MO",accept,none,"explained, no routing fix"
+explain-USGS-11466320,explain,USGS-11466320,SANTA ROSA C A WILLOWSIDE RD NR SANTA ROSA CA,accept,none,"explained, no routing fix"
+explain-USGS-05544200,explain,USGS-05544200,"MUKWONAGO RIVER AT MUKWONAGO, WI",accept,none,"explained, no routing fix"
+explain-USGS-01381800,explain,USGS-01381800,Whippany River near Pine Brook NJ,accept,none,"explained, no routing fix"
+explain-USGS-03293510,explain,USGS-03293510,"BEARGRASS CREEK AT RIVER ROAD AT LOUISVILLE, KY",accept,none,"explained, no routing fix"
+explain-USGS-01171500,explain,USGS-01171500,"MILL RIVER AT NORTHAMPTON, MA",accept,none,"explained, no routing fix"
+explain-USGS-03330241,explain,USGS-03330241,"TIPPECANOE RIVER AT NORTH WEBSTER, IN",accept,none,"explained, no routing fix"
+explain-USGS-10168000,explain,USGS-10168000,LITTLE COTTONWOOD CREEK @ JORDAN RIVER NR SLC,accept,none,"explained, no routing fix"
+explain-USGS-12212050,explain,USGS-12212050,"FISHTRAP CREEK AT FRONT STREET AT LYNDEN, WA",accept,none,"explained, no routing fix"
+explain-USGS-14202650,explain,USGS-14202650,"WAPATO CREEK AT SW GASTON ROAD, AT GASTON, OR",accept,none,"explained, no routing fix"
+explain-USGS-12117000,explain,USGS-12117000,"TAYLOR CREEK NEAR SELLECK, WA",accept,none,"explained, no routing fix"
+gauge2x-USGS-08062700,gauge2x,USGS-08062700,,accept,passthrough,"routing, no move: Trinity River at Trinidad TX: graph 49.8 km2, USGS 22,113; main stem through the gauge node gives 24,741 (MERIT cell 3.4 km away: 24,614)"
+gauge2x-USGS-05227500,gauge2x,USGS-05227500,,accept,passthrough,"routing, no move: Mississippi River at Aitkin MN: graph 449, USGS 15,902; main stem through the gauge node gives 15,192"
+gauge2x-USGS-02223056,gauge2x,USGS-02223056,,accept,passthrough,"routing, no move: Oconee River at Avant Mine GA: graph 228, USGS 8,208; main stem through the gauge node gives 8,252"
+gauge2x-USGS-07368000,gauge2x,USGS-07368000,,accept,passthrough,"routing, no move: Boeuf River near Girard LA: graph 56, USGS 3,175; main stem through the gauge node gives 4,002 (flat terrain; MERIT's main stem is already 24% over USGS)"

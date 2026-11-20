@@ -1,0 +1,35 @@
+# Read-only inputs of the evaluation and figure steps exercised by the smoke
+# test, relative to $SWOTGAT_WORK. On the authors' cluster these are linked
+# from the original project folder; elsewhere, fetch them from the data archive.
+# --- gauge truth (stage 07a outputs)
+CONUS_storage_fork/testsets/regime3_full_1980_2020
+CONUS_storage_fork/testsets/regime1x_2023_2026
+CONUS_storage_fork/testsets/regime1_2023_2025
+CONUS_storage_fork/testsets/regime2_2015_2020
+CONUS_storage_fork/eval/score2026/spans_2023_2026.csv
+CONUS_storage_fork/gauges_expand/sizing/candidates.csv
+# --- SWOT-GAT predictions (stage 06 outputs), both seeds
+CONUS_storage_fork/predictions/era5_conus_v35c5_S1_storage_20261028_074428
+CONUS_storage_fork/predictions/era5_conus_v35c5_S2_storage_s1_20261028_085321
+# --- rule-model runs (stage 07b outputs)
+CONUS_storage_fork/predictions/grades_gdrom3c_g_y1980
+CONUS_storage_fork/predictions/grades_istarf3c_g_y1980
+CONUS_storage_fork/predictions/grades_modromcal3c_g_y1980
+CONUS_storage_fork/predictions/grades_modromrf3c_g_y1980_pubnorm
+CONUS_storage_fork/predictions/grades_gdrom3c_g26h0
+CONUS_storage_fork/predictions/grades_istarf3c_g26h0
+CONUS_storage_fork/predictions/grades_modromcal3c_g26h0
+GRADES/ISTARF-CONUS.csv
+# --- SWOT targets (stage 04 output) and series file (stage 07c)
+CONUS_storage_fork/eval/half_vd_review/lakesp_vD_halfexact_graph.parquet
+CONUS_storage_fork/eval/c5_paper/fig_c5/series_ip.npz
+CONUS_storage_fork/eval/baselines_c5/score/swot_fit.csv
+# --- site metadata and driver tables (stage 07c outputs)
+CONUS_storage_fork/eval/grl_figs/sites_v5_g.csv
+CONUS_storage_fork/eval/overlap50/fig3c_sd/all_sites_harm.csv
+CONUS_storage_fork/eval/perf_attrib/out/vars.parquet
+CONUS_storage_fork/eval/perf_attrib/out/ops_8120.parquet
+CONUS_storage_fork/eval/perf_attrib/out/blocks.csv
+CONUS_storage_fork/eval/grl_figs/intermediate/a365_vDspan_20261030/figset_a365e/irreg_0020.parquet
+# --- graph (stage 01 output), for the graph-build check
+CONUS_storage_fork/eval/graph_v3/v35/subbasins_conus_v35.parquet

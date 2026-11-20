@@ -1,0 +1,487 @@
+key,group,sub,node,name,graph_v34,merit_ref,upa_inside,upa_buffered,lake_km2,own_area,nextdown,n_inflows,inflows,holder,holder_upa,gdw,gdw_catch_max,vd_target,test,train
+refov-7420531752,refov,"<bound method Series.sub of key                                       refov-7420531752
+group                                                refov
+sub                                                    NaN
+node                                            7420531752
+kind                                                  lake
+name                                                   NaN
+fix      {""op"": ""override_reference"", ""flag"": ""MERIT re...
+why      The graph (598 km²) matches the largest MERIT ...
+Name: 61, dtype: object>",7420531752,,598.0428505906384,530.2742919921875,530.2742919921875,597.3800048828125,0.5967011494236453,0.017542879221617978,74005191,2,74008652:67.1;74005791:530.9,,,,,True,False,True
+refov-7420854652,refov,"<bound method Series.sub of key                                       refov-7420854652
+group                                                refov
+sub                                                    NaN
+node                                            7420854652
+kind                                                  lake
+name                                         STRAIGHT LAKE
+fix      {""op"": ""override_reference"", ""flag"": ""MERIT re...
+why      The graph (80.1 km²) matches the largest MERIT...
+Name: 62, dtype: object>",7420854652,STRAIGHT LAKE,80.10872716710436,71.65764617919922,71.65764617919922,80.00457000732422,1.3998929377326266,80.10872716710436,USGS-05243725,0,,,,,,True,False,False
+refov-7820018262,refov,"<bound method Series.sub of key                                       refov-7820018262
+group                                                refov
+sub                                                    NaN
+node                                            7820018262
+kind                                                  lake
+name                                                   NaN
+fix      {""op"": ""override_reference"", ""flag"": ""MERIT re...
+why      The graph (93.0 km²) matches the largest MERIT...
+Name: 63, dtype: object>",7820018262,,92.98353544600867,50.27128219604492,50.27128219604492,92.86446380615234,0.7370913241321406,0.030712655751539378,78022445,2,78023466:41.9;78023440:51.1,,,,,False,False,False
+refov-7420101632,refov,"<bound method Series.sub of key                                       refov-7420101632
+group                                                refov
+sub                                                    NaN
+node                                            7420101632
+kind                                                  lake
+name                                BLACK HOLLOW RESERVOIR
+fix      {""op"": ""override_reference"", ""flag"": ""MERIT re...
+why      The graph (55.0 km²) matches the largest MERIT...
+Name: 64, dtype: object>",7420101632,BLACK HOLLOW RESERVOIR,55.01422704829459,49.43799591064453,49.43799591064453,54.89767074584961,1.4361667243679042,55.01422704829459,74030409,0,,,,,,True,False,True
+refov-7421004382,refov,"<bound method Series.sub of key                                       refov-7421004382
+group                                                refov
+sub                                                    NaN
+node                                            7421004382
+kind                                                  lake
+name                                                   NaN
+fix      {""op"": ""override_reference"", ""flag"": ""MERIT re...
+why      The graph (56.4 km²) matches the largest MERIT...
+Name: 65, dtype: object>",7421004382,,56.36987817612205,48.7465934753418,48.7465934753418,56.26950454711914,0.5471552346746615,56.36987817612205,74045163,0,,,,,,False,False,False
+refov-7420529872,refov,"<bound method Series.sub of key                                       refov-7420529872
+group                                                refov
+sub                                                    NaN
+node                                            7420529872
+kind                                                  lake
+name                                   WHITETAIL RESERVOIR
+fix      {""op"": ""override_reference"", ""flag"": ""MERIT re...
+why      The graph (50.6 km²) matches the largest MERIT...
+Name: 66, dtype: object>",7420529872,WHITETAIL RESERVOIR,50.57321839270838,38.63483428955078,38.63483428955078,50.4957160949707,1.4536899033706203,50.57321839270838,74010207,0,,,,WHITETAIL DAM catch 50.0 (d 0.00 km),50.0,False,False,False
+refov-7310123892,refov,"<bound method Series.sub of key                                       refov-7310123892
+group                                                refov
+sub                                                    NaN
+node                                            7310123892
+kind                                                  lake
+name                                            FORGE POND
+fix      {""op"": ""override_reference"", ""flag"": ""MERIT re...
+why      The graph (62.8 km²) matches the largest MERIT...
+Name: 67, dtype: object>",7310123892,FORGE POND,62.83632994701269,35.81779861450195,35.81779861450195,62.75192260742188,0.6901652211783985,0.03168380348803283,USGS-01100000,2,73002323:26.9;73002300:35.9,,,,,True,False,True
+refov-7420332862,refov,"<bound method Series.sub of key                                       refov-7420332862
+group                                                refov
+sub                                                    NaN
+node                                            7420332862
+kind                                                  lake
+name                                        LONE STAR LAKE
+fix      {""op"": ""override_reference"", ""flag"": ""MERIT re...
+why      The graph (24.0 km²) matches the largest MERIT...
+Name: 68, dtype: object>",7420332862,LONE STAR LAKE,23.97024336154533,20.25338363647461,20.25338363647461,23.930131912231445,0.5895082325934481,23.97024336154533,USGS-06891500,0,,,,LONE STAR LAKE catch 26.0 (d 0.00 km),26.0,True,False,False
+refov-7420175902,refov,"<bound method Series.sub of key                                       refov-7420175902
+group                                                refov
+sub                                                    NaN
+node                                            7420175902
+kind                                                  lake
+name                                         LAKE LANGSTON
+fix      {""op"": ""override_reference"", ""flag"": ""MERIT re...
+why      The graph (15.8 km²) matches the largest MERIT...
+Name: 69, dtype: object>",7420175902,LAKE LANGSTON,15.76799087022136,14.250635147094728,14.250635147094728,15.723260879516602,0.7551965112402147,15.76799087022136,74053367,0,,,,LANGSTON LAKE catch 15.0 (d 0.00 km),15.0,True,False,False
+refov-7420958752,refov,"<bound method Series.sub of key                                       refov-7420958752
+group                                                refov
+sub                                                    NaN
+node                                            7420958752
+kind                                                  lake
+name                                     WILLIAMSTOWN LAKE
+fix      {""op"": ""override_reference"", ""flag"": ""MERIT re...
+why      The graph (22.8 km²) matches the largest MERIT...
+Name: 70, dtype: object>",7420958752,WILLIAMSTOWN LAKE,22.79833122212965,13.339048385620115,13.339048385620115,22.740880966186523,0.8887014929226361,22.79833122212965,USGS-03254520,0,,,,WILLIAMSTOWN LAKE DAM catch 22.0 (d 0.00 km),22.0,True,False,False
+refov-7320144582,refov,"<bound method Series.sub of key                                       refov-7320144582
+group                                                refov
+sub                                                    NaN
+node                                            7320144582
+kind                                                  lake
+name                                                   NaN
+fix      {""op"": ""override_reference"", ""flag"": ""MERIT re...
+why      The graph (13.7 km²) matches the largest MERIT...
+Name: 71, dtype: object>",7320144582,,13.690682083069854,12.392029762268066,12.392029762268066,13.68211269378662,0.6483556046120065,13.690682083069854,73014774,0,,,,,,True,False,False
+refov-7320352922,refov,"<bound method Series.sub of key                                       refov-7320352922
+group                                                refov
+sub                                                    NaN
+node                                            7320352922
+kind                                                  lake
+name                                                   NaN
+fix      {""op"": ""override_reference"", ""flag"": ""MERIT re...
+why      The graph (20.8 km²) matches the largest MERIT...
+Name: 72, dtype: object>",7320352922,,20.791760911770602,12.207351684570312,12.207351684570312,20.7237491607666,0.5593073286541692,20.791760911770602,USGS-02401390,0,,,,,,True,False,False
+refov-7421024112,refov,"<bound method Series.sub of key                                       refov-7421024112
+group                                                refov
+sub                                                    NaN
+node                                            7421024112
+kind                                                  lake
+name                                       HAMMERTOWN LAKE
+fix      {""op"": ""override_reference"", ""flag"": ""MERIT re...
+why      The graph (8.3 km²) matches the largest MERIT ...
+Name: 73, dtype: object>",7421024112,HAMMERTOWN LAKE,8.307981165146693,5.865659713745117,5.865659713745117,8.345104217529297,0.5440759519575182,8.307981165146693,74039483,0,,,,HAMMERTOWN LAKE DAM catch 4.0 (d 0.00 km),4.0,True,False,False
+refov-7420520762,refov,"<bound method Series.sub of key                                       refov-7420520762
+group                                                refov
+sub                                                    NaN
+node                                            7420520762
+kind                                                  lake
+name                                 RATTLESNAKE RESERVOIR
+fix      {""op"": ""override_reference"", ""flag"": ""MERIT re...
+why      The graph (5.9 km²) matches the largest MERIT ...
+Name: 74, dtype: object>",7420520762,RATTLESNAKE RESERVOIR,5.875066223060506,4.113850593566895,4.113850593566895,5.865871906280518,0.666404250875254,5.875066223060506,74009593,0,,,,,,True,False,False
+edge-7320041332,edge,"<bound method Series.sub of key                                        edge-7320041332
+group                                                 edge
+sub                                                    NaN
+node                                            7320041332
+kind                                                  lake
+name                                                   NaN
+fix                                 {""op"": ""keep_routing""}
+why      A river passes along the lake outline: one cel...
+Name: 75, dtype: object>",7320041332,,17.16689654521838,7.920286655426025,7.920286655426025,17.089218139648438,0.6453310059312455,17.16689654521838,USGS-02294781,0,,,,South Ridgewood catch 2.0 (d 1.24 km),2.0,True,False,False
+edge-7320138252,edge,"<bound method Series.sub of key                                        edge-7320138252
+group                                                 edge
+sub                                                    NaN
+node                                            7320138252
+kind                                                  lake
+name                     WILLIAM ""BILL"" DANNELLY RESERVOIR
+fix                                 {""op"": ""keep_routing""}
+why      A river passes along the lake outline: one cel...
+Name: 76, dtype: object>",7320138252,"WILLIAM ""BILL"" DANNELLY RESERVOIR",53465.40626064201,6.769872188568115,6.769872188568115,53288.9296875,0.6089672452357333,6.810949380169623,7320137783,1,7320137792:53458.6,,,,,True,False,True
+above-7820019853,above,"<bound method Series.sub of key                                       above-7820019853
+group                                                above
+sub                                                    NaN
+node                                            7820019853
+kind                                                  lake
+name                                            MOSES LAKE
+fix                                 {""op"": ""keep_routing""}
+why      The lake node carries 6,108 km², but no MERIT ...
+Name: 77, dtype: object>",7820019853,MOSES LAKE,6107.609721206506,7.503605842590332,7.503605842590332,7.807816982269287,1.0456282163866621,7.7012323844627675,7820020043,1,7820019833:6099.9,,,,,True,False,False
+above-7420930213,above,"<bound method Series.sub of key                                       above-7420930213
+group                                                above
+sub                                                    NaN
+node                                            7420930213
+kind                                                  lake
+name                                KENTUCKY;KENTUCKY LAKE
+fix                                 {""op"": ""keep_routing""}
+why      The lake node carries 7.0 km², but no MERIT ce...
+Name: 78, dtype: object>",7420930213,KENTUCKY;KENTUCKY LAKE,7.0244151359839275,3.830036163330078,3.830036163330078,3.8647983074188232,0.9511313995505303,3.8705561778184827,7420955133,1,7420921753:3.2,,,,,True,False,False
+above-7420501102,above,"<bound method Series.sub of key                                       above-7420501102
+group                                                above
+sub                                                    NaN
+node                                            7420501102
+kind                                                  lake
+name                                             SWAN LAKE
+fix                                 {""op"": ""keep_routing""}
+why      The lake node carries 22.6 km², but no MERIT c...
+Name: 79, dtype: object>",7420501102,SWAN LAKE,22.63417850929216,3.733118534088135,3.733118534088135,3.7515673637390137,0.5704304855693988,3.7400208088410207,7420492233,1,7420492853:18.9,,,,,False,False,False
+above-7320351722,above,"<bound method Series.sub of key                                       above-7320351722
+group                                                above
+sub                                                    NaN
+node                                            7320351722
+kind                                                  lake
+name                                                   NaN
+fix                                 {""op"": ""keep_routing""}
+why      The lake node carries 24.7 km², but no MERIT c...
+Name: 80, dtype: object>",7320351722,,24.743742378840953,0.1132837757468223,0.1132837757468223,0.177007794380188,0.790446570053108,3.1261563685797076,7320347642,1,7320347662:21.6,,,,,True,False,False
+inflow-7421096182,inflow,"<bound method Series.sub of key                                      inflow-7421096182
+group                                               inflow
+sub                                feeding reach elsewhere
+node                                            7421096182
+kind                                                  lake
+name                             LAKE LORAMIE;LORAMIE LAKE
+fix      {""op"": ""split_at_lake_outlet"", ""node"": ""USGS-0...
+why      The MERIT reach that feeds the lake (74034226,...
+Name: 81, dtype: object>",7421096182,LAKE LORAMIE;LORAMIE LAKE,4.4008756727429965,212.7384033203125,212.7384033203125,212.7449493408203,2.3961222897723844,4.4008756727429965,USGS-03261950,0,,USGS-03261950,376.5919505301027,,,True,False,False
+inflow-7420550242,inflow,"<bound method Series.sub of key                                      inflow-7420550242
+group                                               inflow
+sub                                feeding reach elsewhere
+node                                            7420550242
+kind                                                  lake
+name                                         GASCOYNE LAKE
+fix      {""op"": ""split_at_lake_outlet"", ""node"": ""740094...
+why      The MERIT reach that feeds the lake (74006088,...
+Name: 82, dtype: object>",7420550242,GASCOYNE LAKE,161.5036150599675,190.60107421875,190.60107421875,190.64276123046875,0.6550324943693668,0.9185484551642549,74009422,2,74007098:51.5;74006374:109.1,74009422,2409.4217951633736,,,True,False,False
+inflow-7420214232,inflow,"<bound method Series.sub of key                                      inflow-7420214232
+group                                               inflow
+sub                                feeding reach elsewhere
+node                                            7420214232
+kind                                                  lake
+name                                     LAKE RAYMOND GARY
+fix      {""op"": ""split_at_lake_outlet"", ""node"": ""740670...
+why      The MERIT reach that feeds the lake (74067571,...
+Name: 83, dtype: object>",7420214232,LAKE RAYMOND GARY,87.08147483828704,145.96580505371094,145.96580505371094,145.9871368408203,0.642149234264533,0.7634592890012332,74067029,2,74064121:50.0;74064068:36.3,74067029,121131.24279944118,,,True,False,False
+inflow-7320175082,inflow,"<bound method Series.sub of key                                      inflow-7320175082
+group                                               inflow
+sub                                feeding reach elsewhere
+node                                            7320175082
+kind                                                  lake
+name                                                   NaN
+fix      {""op"": ""split_at_lake_outlet"", ""node"": ""732017...
+why      The MERIT reach that feeds the lake (73012913,...
+Name: 84, dtype: object>",7320175082,,89.34260887594138,98.31372833251952,98.31372833251952,98.39215850830078,0.779054383242316,89.34260887594138,USGS-02403310,0,,7320175082,89.34260887594138,CHOCCOLOCCO CREEK W/S DAM SITE 6 catch 83.0 (d 0.00 km),83.0,True,False,False
+inflow-7720021743,inflow,"<bound method Series.sub of key                                      inflow-7720021743
+group                                               inflow
+sub                                              mid-reach
+node                                            7720021743
+kind                                                  lake
+name                                 MEEKS CABIN RESERVOIR
+fix      {""op"": ""split_at_lake_outlet"", ""node"": ""USGS-0...
+why      The lake sits partway down MERIT reach 7700102...
+Name: 85, dtype: object>",7720021743,MEEKS CABIN RESERVOIR,330.2575740262631,383.9508666992188,383.9508666992188,384.0480346679688,0.6677983237818493,0.805076219075811,USGS-09218500,1,USGS-09217900:329.5,USGS-09219200,837.6484190317494,Meeks Cabin catch 396.0 (d 0.02 km),396.0,False,False,True
+inflow-7510092753,inflow,"<bound method Series.sub of key                                      inflow-7510092753
+group                                               inflow
+sub                                              mid-reach
+node                                            7510092753
+kind                                                  lake
+name                                      LAKE WEATHERFORD
+fix      {""op"": ""split_at_lake_outlet"", ""node"": ""USGS-0...
+why      The lake sits partway down MERIT reach 7500733...
+Name: 86, dtype: object>",7510092753,LAKE WEATHERFORD,168.33241067762913,281.5155639648437,281.5155639648437,281.52276611328125,3.5154803406359147,0.8538249571545873,USGS-08045995,2,75011005:111.3;75010913:56.2,USGS-08045995,635.2973536720261,Lake Weatherford Dam catch 275.0 (d 0.00 km),275.0,True,False,True
+inflow-7510031722,inflow,"<bound method Series.sub of key                                      inflow-7510031722
+group                                               inflow
+sub                                              mid-reach
+node                                            7510031722
+kind                                                  lake
+name                                                   NaN
+fix      {""op"": ""split_at_lake_outlet"", ""node"": ""750184...
+why      The lake sits partway down MERIT reach 7502006...
+Name: 87, dtype: object>",7510031722,,80.35364775192807,95.28011322021484,95.28011322021484,95.56600189208984,0.706273202315405,5.691087887957288,75018427,2,75021176:45.7;75021173:29.0,75018427,2260.766576607697,,,True,False,True
+inflow-7421108742,inflow,"<bound method Series.sub of key                                      inflow-7421108742
+group                                               inflow
+sub                                              mid-reach
+node                                            7421108742
+kind                                                  lake
+name                                          HANCOCK LAKE
+fix      {""op"": ""split_at_lake_outlet"", ""node"": ""742109...
+why      The lake sits partway down MERIT reach 7401557...
+Name: 88, dtype: object>",7421108742,HANCOCK LAKE,1.9026457158340997,88.83502960205078,88.83502960205078,88.84705352783203,0.6646224907240527,1.9026457158340997,7421112132,0,,7421099193,1453.065466683088,,,True,False,False
+inflow-7320031052,inflow,"<bound method Series.sub of key                                      inflow-7320031052
+group                                               inflow
+sub                                              mid-reach
+node                                            7320031052
+kind                                                  lake
+name                                             LAKE LULU
+fix      {""op"": ""split_at_lake_outlet"", ""node"": ""730219...
+why      The lake sits partway down MERIT reach 7302199...
+Name: 89, dtype: object>",7320031052,LAKE LULU,17.34295603005825,52.29556274414063,52.29556274414063,69.63590240478516,1.0138730506401439,17.34295603005825,73021990,0,,73021990,96.5727707148873,,,True,False,False
+inflow-7720028983,inflow,"<bound method Series.sub of key                                      inflow-7720028983
+group                                               inflow
+sub                                              mid-reach
+node                                            7720028983
+kind                                                  lake
+name                                                   NaN
+fix      {""op"": ""split_at_lake_outlet"", ""node"": ""770138...
+why      The lake sits partway down MERIT reach 7700966...
+Name: 90, dtype: object>",7720028983,,36.38026692567309,51.40297317504883,51.40297317504883,51.40962219238281,3.2888897633456233,36.38026692567309,77013889,0,,77013889,456.6900871794963,Giroux Tailings Impoundment catch 34.0 (d 0.00 km),34.0,False,False,False
+inflow-7510042352,inflow,"<bound method Series.sub of key                                      inflow-7510042352
+group                                               inflow
+sub                                              mid-reach
+node                                            7510042352
+kind                                                  lake
+name                                      CADDO CREEK LAKE
+fix      {""op"": ""split_at_lake_outlet"", ""node"": ""750061...
+why      The lake sits partway down MERIT reach 7500958...
+Name: 91, dtype: object>",7510042352,CADDO CREEK LAKE,0.8750851494221372,49.81143951416016,49.81143951416016,50.74848937988281,0.8214774574311798,0.8750851494221372,75006165,0,,75006165,2649.067948063101,,,True,False,True
+inflow-7421053922,inflow,"<bound method Series.sub of key                                      inflow-7421053922
+group                                               inflow
+sub                                              mid-reach
+node                                            7421053922
+kind                                                  lake
+name                                          WORSTER LAKE
+fix      {""op"": ""split_at_lake_outlet"", ""node"": ""740300...
+why      The lake sits partway down MERIT reach 7402572...
+Name: 92, dtype: object>",7421053922,WORSTER LAKE,28.74916949708339,36.028717041015625,36.028717041015625,36.07369613647461,1.0898138937312973,28.74916949708339,74030029,0,,74030029,909.780491914371,,,True,False,False
+inflow-7420134152,inflow,"<bound method Series.sub of key                                      inflow-7420134152
+group                                               inflow
+sub                                              mid-reach
+node                                            7420134152
+kind                                                  lake
+name                                                   NaN
+fix      {""op"": ""split_at_lake_outlet"", ""node"": ""USGS-0...
+why      The lake sits partway down MERIT reach 7406044...
+Name: 93, dtype: object>",7420134152,,1.2608535390925388,35.22224426269531,35.22224426269531,35.235984802246094,0.9860965282926485,1.2608535390925388,USGS-07174400,0,,USGS-07174400,3554.898314763999,HUDSON LAKE catch 35.0 (d 0.00 km),35.0,True,False,True
+inflow-7320411442,inflow,"<bound method Series.sub of key                                      inflow-7320411442
+group                                               inflow
+sub                                              mid-reach
+node                                            7320411442
+kind                                                  lake
+name                                         LAKE CAROLINA
+fix      {""op"": ""split_at_lake_outlet"", ""node"": ""USGS-0...
+why      The lake sits partway down MERIT reach 7301341...
+Name: 94, dtype: object>",7320411442,LAKE CAROLINA,1.0822737129449453,32.3683967590332,32.3683967590332,34.07114791870117,0.6428143754642447,1.0822737129449453,USGS-02148000,0,,USGS-02148000,13117.545834383975,,,True,False,False
+inflow-7420150332,inflow,"<bound method Series.sub of key                                      inflow-7420150332
+group                                               inflow
+sub                                              mid-reach
+node                                            7420150332
+kind                                                  lake
+name                                        SPORTSMAN LAKE
+fix      {""op"": ""split_at_lake_outlet"", ""node"": ""740627...
+why      The lake sits partway down MERIT reach 7406630...
+Name: 95, dtype: object>",7420150332,SPORTSMAN LAKE,1.033727758045299,32.23611068725586,32.23611068725586,33.30136489868164,1.113436303614783,1.033727758045299,74062704,0,,74062704,529.9086521517629,,,True,False,False
+inflow-7420207882,inflow,"<bound method Series.sub of key                                      inflow-7420207882
+group                                               inflow
+sub                                              mid-reach
+node                                            7420207882
+kind                                                  lake
+name                                                   NaN
+fix      {""op"": ""split_at_lake_outlet"", ""node"": ""USGS-0...
+why      The lake sits partway down MERIT reach 7406574...
+Name: 96, dtype: object>",7420207882,,10.337439148198744,26.030494689941406,26.030494689941406,26.065624237060547,0.8228260865609345,10.337439148198744,USGS-07249400,0,,USGS-07249400,377.77942998879314,JAMES FORK DAM & RESERVOIR catch 25.0 (d 0.00 km),25.0,True,False,True
+inflow-7420265082,inflow,"<bound method Series.sub of key                                      inflow-7420265082
+group                                               inflow
+sub                                              mid-reach
+node                                            7420265082
+kind                                                  lake
+name                                                   NaN
+fix      {""op"": ""split_at_lake_outlet"", ""node"": ""740609...
+why      The lake sits partway down MERIT reach 7406512...
+Name: 97, dtype: object>",7420265082,,0.7924611144714218,25.758325576782227,25.758325576782227,25.77947425842285,1.3005373892392325,0.7924611144714218,74060957,0,,74060957,408914.08767920174,,,True,False,False
+inflow-7720021652,inflow,"<bound method Series.sub of key                                      inflow-7720021652
+group                                               inflow
+sub                            too small for a MERIT reach
+node                                            7720021652
+kind                                                  lake
+name                                                   NaN
+fix      {""op"": ""reference_limit"", ""text"": ""Keep the gr...
+why      No MERIT-Basins reach crosses the outline: the...
+Name: 98, dtype: object>",7720021652,,10.367484935696867,25.524328231811523,25.524328231811523,25.74259185791016,1.1406836154684574,10.367484935696867,77000903,0,,,,,,True,False,False
+inflow-7420963212,inflow,"<bound method Series.sub of key                                      inflow-7420963212
+group                                               inflow
+sub                            too small for a MERIT reach
+node                                            7420963212
+kind                                                  lake
+name                                                   NaN
+fix      {""op"": ""reference_limit"", ""text"": ""Keep the gr...
+why      No MERIT-Basins reach crosses the outline: the...
+Name: 99, dtype: object>",7420963212,,3.460571816051517,23.9273681640625,23.9273681640625,24.040170669555664,0.7603465632047062,3.460571816051517,74037303,0,,,,LAMB LAKE ESTATES DAM catch 24.0 (d 0.00 km),24.0,True,False,False
+inflow-7420476842,inflow,"<bound method Series.sub of key                                      inflow-7420476842
+group                                               inflow
+sub                            too small for a MERIT reach
+node                                            7420476842
+kind                                                  lake
+name                                        BLACK DOG LAKE
+fix      {""op"": ""reference_limit"", ""text"": ""Keep the gr...
+why      No MERIT-Basins reach crosses the outline: the...
+Name: 100, dtype: object>",7420476842,BLACK DOG LAKE,9.13776749318224,23.38607788085937,23.38607788085937,23.404359817504883,1.838665348701376,9.13776749318224,74009184,0,,,,,,True,False,True
+inflow-7420223552,inflow,"<bound method Series.sub of key                                      inflow-7420223552
+group                                               inflow
+sub                            too small for a MERIT reach
+node                                            7420223552
+kind                                                  lake
+name                                                   NaN
+fix      {""op"": ""reference_limit"", ""text"": ""Keep the gr...
+why      No MERIT-Basins reach crosses the outline: the...
+Name: 101, dtype: object>",7420223552,,6.306239937471517,20.39360809326172,20.39360809326172,20.436248779296875,0.5904428520233697,6.306239937471517,74064071,0,,,,,,True,False,False
+inflow-7420486552,inflow,"<bound method Series.sub of key                                      inflow-7420486552
+group                                               inflow
+sub                            too small for a MERIT reach
+node                                            7420486552
+kind                                                  lake
+name                                        MINNESOTA LAKE
+fix      {""op"": ""reference_limit"", ""text"": ""Keep the gr...
+why      No MERIT-Basins reach crosses the outline: the...
+Name: 102, dtype: object>",7420486552,MINNESOTA LAKE,0.7324997450502251,19.86997604370117,19.86997604370117,19.9133415222168,4.8009844387052585,0.7324997450502251,74018235,0,,,,,,True,False,True
+inflow-7720010242,inflow,"<bound method Series.sub of key                                      inflow-7720010242
+group                                               inflow
+sub                            too small for a MERIT reach
+node                                            7720010242
+kind                                                  lake
+name                                           MORGAN LAKE
+fix      {""op"": ""reference_limit"", ""text"": ""Keep the gr...
+why      No MERIT-Basins reach crosses the outline: the...
+Name: 103, dtype: object>",7720010242,MORGAN LAKE,16.80139100471952,19.71353530883789,19.71353530883789,19.72041320800781,4.789968788508926,16.80139100471952,77021440,0,,,,7924 catch 20.0 (d 0.00 km),20.0,True,False,False
+inflow-7420864712,inflow,"<bound method Series.sub of key                                      inflow-7420864712
+group                                               inflow
+sub                            too small for a MERIT reach
+node                                            7420864712
+kind                                                  lake
+name                                       BLACK BEAR LAKE
+fix      {""op"": ""reference_limit"", ""text"": ""Keep the gr...
+why      No MERIT-Basins reach crosses the outline: the...
+Name: 104, dtype: object>",7420864712,BLACK BEAR LAKE,9.33494942250264,18.857419967651367,18.857419967651367,18.881074905395508,0.7321961880720966,9.33494942250264,74004643,0,,,,,,True,False,False
+inflow-7510140172,inflow,"<bound method Series.sub of key                                      inflow-7510140172
+group                                               inflow
+sub                            too small for a MERIT reach
+node                                            7510140172
+kind                                                  lake
+name                                         BELLWOOD LAKE
+fix      {""op"": ""reference_limit"", ""text"": ""Keep the gr...
+why      No MERIT-Basins reach crosses the outline: the...
+Name: 105, dtype: object>",7510140172,BELLWOOD LAKE,15.335541181719286,18.27467918395996,18.27467918395996,18.310895919799805,0.555275327985524,15.335541181719286,75009991,0,,,,,,True,False,False
+inflow-7730022902,inflow,"<bound method Series.sub of key                                      inflow-7730022902
+group                                               inflow
+sub                            too small for a MERIT reach
+node                                            7730022902
+kind                                                  lake
+name                                                   NaN
+fix      {""op"": ""reference_limit"", ""text"": ""Keep the gr...
+why      No MERIT-Basins reach crosses the outline: the...
+Name: 106, dtype: object>",7730022902,,1.2611167849869027,17.364255905151367,17.364255905151367,17.383615493774414,2.1962354648262035,1.2611167849869027,77001497,0,,,,,,True,False,False
+inflow-7730013702,inflow,"<bound method Series.sub of key                                      inflow-7730013702
+group                                               inflow
+sub                            too small for a MERIT reach
+node                                            7730013702
+kind                                                  lake
+name                                                   NaN
+fix      {""op"": ""reference_limit"", ""text"": ""Keep the gr...
+why      No MERIT-Basins reach crosses the outline: the...
+Name: 107, dtype: object>",7730013702,,8.085732075358402,15.242424964904783,15.242424964904783,20.33345603942871,2.579253745909878,8.085732075358402,77005833,0,,,,,,True,False,False
+inflow-7421115652,inflow,"<bound method Series.sub of key                                      inflow-7421115652
+group                                               inflow
+sub                            too small for a MERIT reach
+node                                            7421115652
+kind                                                  lake
+name                                                   NaN
+fix      {""op"": ""reference_limit"", ""text"": ""Keep the gr...
+why      No MERIT-Basins reach crosses the outline: the...
+Name: 108, dtype: object>",7421115652,,12.317708812458692,14.45901870727539,14.45901870727539,14.574556350708008,2.049597910906893,12.317708812458692,USGS-03023100,0,,,,,,True,False,False
+inflow-7420078992,inflow,"<bound method Series.sub of key                                      inflow-7420078992
+group                                               inflow
+sub                            too small for a MERIT reach
+node                                            7420078992
+kind                                                  lake
+name                                             LAKE OEHN
+fix      {""op"": ""reference_limit"", ""text"": ""Keep the gr...
+why      No MERIT-Basins reach crosses the outline: the...
+Name: 109, dtype: object>",7420078992,LAKE OEHN,2.972264510302977,7.986756801605225,7.986756801605225,8.319790840148926,0.5983647089021724,2.972264510302977,74047373,0,,,,,,True,False,False
+inflow-7740040622,inflow,"<bound method Series.sub of key                                      inflow-7740040622
+group                                               inflow
+sub                            too small for a MERIT reach
+node                                            7740040622
+kind                                                  lake
+name                                      GRAVEN RESERVOIR
+fix      {""op"": ""reference_limit"", ""text"": ""Keep the gr...
+why      No MERIT-Basins reach crosses the outline: the...
+Name: 110, dtype: object>",7740040622,GRAVEN RESERVOIR,3.408160551559001,7.955241680145264,7.955241680145264,7.9616923332214355,0.5041686412290249,3.408160551559001,77001094,0,,,,,,True,False,True
+inflow-7320137842,inflow,"<bound method Series.sub of key                                      inflow-7320137842
+group                                               inflow
+sub                            too small for a MERIT reach
+node                                            7320137842
+kind                                                  lake
+name                                                   NaN
+fix      {""op"": ""reference_limit"", ""text"": ""Keep the gr...
+why      No MERIT-Basins reach crosses the outline: the...
+Name: 111, dtype: object>",7320137842,,5.2159404869385995,7.216867923736572,7.216867923736572,7.224165916442871,0.6190887275509462,5.2159404869385995,73017615,0,,,,,,True,False,False
+inflow-7420097272,inflow,"<bound method Series.sub of key                                      inflow-7420097272
+group                                               inflow
+sub                            too small for a MERIT reach
+node                                            7420097272
+kind                                                  lake
+name           WATER SUPPLY AND STORAGE RESERVOIR NUMBER 3
+fix      {""op"": ""reference_limit"", ""text"": ""Keep the gr...
+why      No MERIT-Basins reach crosses the outline: the...
+Name: 112, dtype: object>",7420097272,WATER SUPPLY AND STORAGE RESERVOIR NUMBER 3,1.4450885659661479,5.957309722900391,5.957309722900391,6.002895832061768,0.7243503730330628,1.4450885659661479,7420107173,0,,,,,,True,False,True
+inflow-7730020492,inflow,"<bound method Series.sub of key                                      inflow-7730020492
+group                                               inflow
+sub                            too small for a MERIT reach
+node                                            7730020492
+kind                                                  lake
+name                                            TWIN LAKES
+fix      {""op"": ""reference_limit"", ""text"": ""Keep the gr...
+why      No MERIT-Basins reach crosses the outline: the...
+Name: 113, dtype: object>",7730020492,TWIN LAKES,3.7939232519029877,5.865597248077393,5.865597248077393,5.929220199584961,0.6334838620400232,3.7939232519029877,77000859,0,,,,,,True,False,True
+inflow-7730012912,inflow,"<bound method Series.sub of key                                      inflow-7730012912
+group                                               inflow
+sub                            too small for a MERIT reach
+node                                            7730012912
+kind                                                  lake
+name                                                   NaN
+fix      {""op"": ""reference_limit"", ""text"": ""Keep the gr...
+why      No MERIT-Basins reach crosses the outline: the...
+Name: 114, dtype: object>",7730012912,,3.122985745526866,4.5174994468688965,4.5174994468688965,4.569420337677002,0.6328767675038697,3.122985745526866,77005588,0,,,,,,True,False,False

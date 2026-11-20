@@ -1,0 +1,82 @@
+#!/usr/bin/env python3
+"""Run one pipeline script from its deployed location in the work tree.
+
+    bin/run [--python NAME] [--cwd DIR] <path in this repository> [script arguments...]
+
+``<path in this repository>`` is the file as listed in the README, for example
+``07_evaluation/c_scoring/overlap50/score_2010.py``. The script is executed
+from the place ``tools/deploy.py`` copied it to, so that it finds its sibling
+modules and writes its outputs where the next step expects them.
+
+``--python NAME`` picks the interpreter from ``config/paths.env``
+(``SWOTGAT_<NAME>``; default ``PYTHON``, the model environment).
+``--cwd DIR`` sets the working directory (default: the script's own folder).
+``--where`` only prints the deployed path.
+"""
+from __future__ import annotations
+
+import csv
+import os
+import sys
+from pathlib import Path
+
+REPO = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(REPO / "src"))
+from swotgat import paths  # noqa: E402
+
+
+def deployed(release_path: str) -> Path:
+    """Return where ``tools/deploy.py`` put the repository file ``release_path``."""
+    roots = paths.as_dict()
+    rel = str(Path(release_path).resolve().relative_to(REPO)) if Path(release_path).exists() else release_path
+    with open(REPO / "provenance" / "files.tsv", newline="") as fh:
+        for row in csv.DictReader(fh, delimiter="\t"):
+            if row["release_path"] == rel:
+                if not row["deploy_to"]:
+                    return REPO / rel
+                root, sub = row["deploy_to"].split(":", 1)
+                return Path(roots[root]) / sub
+    raise SystemExit(f"bin/run: {release_path} is not a file of this repository (see provenance/files.tsv)")
+
+
+def main() -> None:
+    """Parse the options and execute the script from its deployed location."""
+    args = sys.argv[1:]
+    python, cwd, where = "PYTHON", None, False
+    while args and args[0].startswith("--"):
+        flag = args.pop(0)
+        if flag == "--python":
+            python = args.pop(0)
+        elif flag == "--cwd":
+            cwd = args.pop(0)
+        elif flag == "--where":
+            where = True
+        else:
+            raise SystemExit(__doc__)
+    if not args:
+        raise SystemExit(__doc__)
+    script = deployed(args[0])
+    if where:
+        print(script)
+        return
+    if not script.exists():
+        raise SystemExit(f"bin/run: {script} is missing; run `python tools/deploy.py` first")
+    if script != REPO / args[0] and script.read_bytes() != (REPO / args[0]).read_bytes() \
+            and not args[0].endswith(".template"):
+        raise SystemExit(f"bin/run: {script} differs from the repository copy; run `python tools/deploy.py --force`")
+    interpreter = paths.as_dict().get(python)
+    if not interpreter:
+        raise SystemExit(f"bin/run: SWOTGAT_{python} is not set in config/paths.env")
+    env = dict(os.environ)
+    # swotgat (paths, http) first; the vendored packages last, so a script's own folder wins
+    search = [str(REPO / "src"), *filter(None, env.get("PYTHONPATH", "").split(os.pathsep)),
+              str(REPO / "vendor" / "graph_delineator" / "src"), str(REPO / "vendor" / "swot_ml" / "src")]
+    env["PYTHONPATH"] = os.pathsep.join(dict.fromkeys(search))
+    env.setdefault("PYTHONHASHSEED", "0")
+    env.setdefault("PYTHONDONTWRITEBYTECODE", "1")
+    os.chdir(cwd or script.parent)
+    os.execve(interpreter, [interpreter, "-u", str(script), *args[1:]], env)
+
+
+if __name__ == "__main__":
+    main()

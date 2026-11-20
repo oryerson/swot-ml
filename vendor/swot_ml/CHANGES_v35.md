@@ -1,0 +1,1 @@
+- 2026-10-22T23:42Z train/trainer.py: checker A F10 zeroed-NaN-gradient step count (patch_f10_v35.py; logging only, optimiser unchanged). Before this, stage_src_v35 = v21_retrain/stage_src exactly.

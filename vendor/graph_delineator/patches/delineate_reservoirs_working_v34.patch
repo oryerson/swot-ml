@@ -1,0 +1,369 @@
+--- a/src/graph_delineator/delineate_reservoirs_working.py
++++ b/src/graph_delineator/delineate_reservoirs_working.py
+@@ -155,6 +155,100 @@
+ # =============================================================================
+ 
+ 
++# Rule 5 (graph v3): when a catchment is split, a predecessor goes to the remainder only if its river clearly ends there.
++SPLIT_ROUTE_TOL_DEG = 2 * MERIT_RES
++# ... and (v3.1) only if MERIT D8 flow from its river end does not pass the lake outlet.
++_D8_STEP = {1: (0, 1), 2: (1, 1), 4: (1, 0), 8: (1, -1), 16: (0, -1), 32: (-1, -1), 64: (-1, 0), 128: (-1, 1)}   # ESRI
++
++
++def _passes_outlet(outlet_d8, start, bounds):
++    """True if MERIT D8 flow from `start` passes within one cell of the lake outlet before leaving `bounds` (+0.01 deg);
++    False if it does not; None if the raster cannot be read or the start cell has no flow direction."""
++    try:
++        import rasterio
++        from rasterio.windows import from_bounds
++        flow_dir_path, pfaf2_id, olng, olat = outlet_d8
++        m = 0.01
++        bounds = (min(bounds[0], start.x, olng), min(bounds[1], start.y, olat),
++                  max(bounds[2], start.x, olng), max(bounds[3], start.y, olat))   # v3.2: the window holds the start point
++        with rasterio.open(resolve_raster(flow_dir_path, pfaf2_id)) as ds:
++            w = from_bounds(bounds[0] - m, bounds[1] - m, bounds[2] + m, bounds[3] + m,
++                            transform=ds.transform).round_offsets().round_lengths()
++            d = ds.read(1, window=w, boundless=True, fill_value=0)
++            inv = ~ds.window_transform(w)
++        c, r = inv * (start.x, start.y)
++        oc, orow = inv * (olng, olat)
++        r, c, orow, oc = int(r), int(c), int(orow), int(oc)
++        H, Wd = d.shape
++        for k in range(H * Wd):
++            if abs(r - orow) <= 1 and abs(c - oc) <= 1:
++                return True
++            if not (0 <= r < H and 0 <= c < Wd):
++                return None if k == 0 else False
++            st = _D8_STEP.get(int(d[r, c]))
++            if st is None:
++                return None if k == 0 else False      # v3.2: no flow direction at the start point = cannot tell
++            r += st[0]; c += st[1]
++        return False
++    except Exception:
++        return None
++
++
++def _line_parts(g):
++    if g is None or g.is_empty:
++        return []
++    return [p for p in (g.geoms if hasattr(g, "geoms") else [g]) if p.geom_type == "LineString" and not p.is_empty]
++
++
++def _assign_river_parts(first, second, upstream_poly, remainder_poly):
++    """(v3.2) Each line part goes to the piece whose polygon holds more of it (ties: the upstream piece)."""
++    up, down = [], []
++    for p in _line_parts(first) + _line_parts(second):
++        try:
++            a, b = p.intersection(upstream_poly).length, p.intersection(remainder_poly).length
++        except Exception:
++            a, b = 1.0, 0.0
++        (up if a >= b else down).append(p)
++    mk = lambda parts: None if not parts else (parts[0] if len(parts) == 1 else unary_union(parts))
++    return mk(up), mk(down)
++
++
++def _pred_outlet(G: nx.DiGraph, node, near):
++    """(v3.2) Where `node`'s water leaves it: the stored outlet of a gauge or reservoir node (the gauge location, the lake
++    outlet cell), else the downstream end of its river."""
++    nd = G.nodes[node]
++    if (nd.get("is_gauge") or nd.get("is_reservoir")) and nd.get("lat") is not None and nd.get("lng") is not None:
++        return Point(float(nd["lng"]), float(nd["lat"]))
++    return _river_end(G, node, near)
++
++
++def _river_end(G: nx.DiGraph, node, near):
++    """Downstream end of `node`'s river: of all line ends, the one nearest `near` (the split catchment). MERIT-Basins lines
++    start at their downstream end (sibling inflows share their first point), and a merged node's river is several lines,
++    so the end is found by position, not by orientation."""
++    geom = G.nodes[node].get("river_geom")
++    if geom is None or geom.is_empty:
++        return None
++    parts = list(geom.geoms) if hasattr(geom, "geoms") else [geom]
++    ends = [Point(xy) for p in parts if p.geom_type == "LineString" and len(p.coords) for xy in (p.coords[0], p.coords[-1])]
++    return min(ends, key=lambda q: q.distance(near)) if ends else None
++
++
++def _drains_into_remainder(G: nx.DiGraph, pred, upstream_poly, remainder_poly, outlet_d8=None) -> bool:
++    if remainder_poly is None or remainder_poly.is_empty or upstream_poly is None or upstream_poly.is_empty:
++        return False
++    end = _pred_outlet(G, pred, upstream_poly.union(remainder_poly))
++    if end is None:
++        return False
++    d_up, d_rem = end.distance(upstream_poly), end.distance(remainder_poly)
++    if not (d_up > SPLIT_ROUTE_TOL_DEG and d_rem < d_up):
++        return False
++    # MERIT D8 check (v3.1): keep the original rewiring when the flow passes the lake outlet, or when it cannot be traced
++    if outlet_d8 is None:
++        return False
++    return _passes_outlet(outlet_d8, end, upstream_poly.union(remainder_poly).bounds) is False
++
++
+ def insert_gauge_into_graph(
+     G: nx.DiGraph,
+     gauge_id: str,
+@@ -163,6 +257,8 @@
+     split_polygon: Polygon,
+     remainder_polygon: Polygon,
+     original_node_id: str,
++    route_by_river_end: bool = False,
++    outlet_d8: tuple = None,
+ ) -> bool:
+     """
+     Insert a gauge by splitting a node's polygon.
+@@ -256,6 +352,16 @@
+         downstream_river = None
+         split_ratio = 0.5
+ 
++    # v3.2: give each part of the river to the piece whose polygon holds more of it. MERIT-Basins lines start at their
++    # DOWNSTREAM end, so the split above hands the gauge (upstream) piece the river BELOW the gauge; rules 2 and 5 read
++    # river_geom, so they measured a split piece's river in the wrong place.
++    if river_geom and 0 < split_ratio < 1:
++        upstream_river, downstream_river = _assign_river_parts(upstream_river, downstream_river, split_polygon, remainder_polygon)
++        len_up = upstream_river.length if upstream_river is not None else 0.0
++        len_down = downstream_river.length if downstream_river is not None else 0.0
++        if len_up + len_down > 0:
++            split_ratio = len_up / (len_up + len_down)
++
+     # Get network connections
+     predecessors = list(G.predecessors(original_node_id))
+ 
+@@ -289,14 +395,22 @@
+         }
+     )
+ 
+-    # Rewire edges
+-    # Remove old edges
++    # Rewire edges. Each predecessor drains into the piece where its river ends (rule 5): normally the upstream (gauge)
++    # piece, but a river that enters the catchment below the split point stays with the remainder. Handing every
++    # predecessor to the upstream piece routed whole rivers through a lake beside them (graph v2: Lake Oahe).
++    # Only at lake-outlet splits (route_by_river_end), and never for a piece of the same MERIT catchment (an earlier split
++    # of this reach, upstream on it by construction).
++    to_remainder = {p for p in predecessors if route_by_river_end
++                    and G.nodes[p].get("original_comid") != original_data.get("original_comid")
++                    and _drains_into_remainder(G, p, split_polygon, remainder_polygon, outlet_d8)}
+     for pred in predecessors:
+-        G.remove_edge(pred, original_node_id)
++        if pred not in to_remainder:
++            G.remove_edge(pred, original_node_id)
+ 
+     # Add new edges: predecessors -> gauge -> original
+     for pred in predecessors:
+-        G.add_edge(pred, gauge_id)
++        if pred not in to_remainder:
++            G.add_edge(pred, gauge_id)
+     G.add_edge(gauge_id, original_node_id)
+ 
+     return True
+@@ -344,6 +458,13 @@
+             flow_dir_path=flow_dir_path,
+             flow_acc_path=flow_acc_path,
+         )
++
++        if gauge_polygon is None and gauge.get("min_area_orig_km2") is not None and gauge.get("min_area_km2") != gauge.get("min_area_orig_km2"):
++            # v3.4: the hinted threshold found no cell in this catchment; retry with the original one rather than lose the gauge
++            print(f"  v3.4: {gauge_id}: retrying without snap_min_area_km2")
++            g2 = gauge.to_dict(); g2["min_area_km2"] = g2["min_area_orig_km2"]
++            gauge_polygon = split_catchment_raster(gauge=g2, basin=pfaf2_id, catchment_poly=current_polygon,
++                                                   flow_dir_path=flow_dir_path, flow_acc_path=flow_acc_path)
+ 
+         if gauge_polygon is None:
+             # Failed, reason will be logged by fn
+@@ -520,10 +641,67 @@
+         split_polygon=upstream_poly,
+         remainder_polygon=remainder_poly,
+         original_node_id=outlet_node,
++        route_by_river_end=True,
++        outlet_d8=(flow_dir_path, pfaf2_id, outlet_lng, outlet_lat),
+     )
+ 
+     return res_id
+ 
++
++
++# Rule 2 (graph v3, lake entry): a catchment that overlaps the reservoir's PLD polygon is absorbed only if the polygon
++# covers at least MIN_OVERLAP_FRAC of it AND either its river runs at least MIN_RIVER_IN_LAKE_M inside the polygon or the
++# polygon covers at least FULL_OVERLAP_FRAC of it. A bare touch is not enough (graph v2.2: Bluestone Lake touched MERIT
++# catchment 74045389 by 0.036 km2 and cut off the Glen Lyn gauge), and neither is a river that runs past the lake.
++MIN_OVERLAP_FRAC = 0.02
++FULL_OVERLAP_FRAC = 0.5
++MIN_RIVER_IN_LAKE_M = 100.0
++_GEOD = pyproj.Geod(ellps="WGS84")
++
++
++def _river_in_lake_m(G: nx.DiGraph, node, res_poly):
++    riv = G.nodes[node].get("river_geom")
++    if riv is None or riv.is_empty:
++        return None
++    inter = riv.intersection(res_poly)
++    return 0.0 if inter.is_empty else float(_GEOD.geometry_length(inter))
++
++
++# Rule 6 (graph v3.3): a lake inside the catchment piece of the gauge below its dam (Moon Lake, Lake Hancock FL).
++LAKE_IN_GAUGE_FRAC = 0.2       # the gauge's piece holds at least a fifth of the lake polygon (and more than the outlet node) ...
++OUTLET_NODE_MAX_FRAC = 0.25    # ... and the node holding the outlet cell less than a quarter
++
++
++def _lake_inside_gauge(G: nx.DiGraph, res_poly, outlet_node, intersecting, outlet_d8, flow_dir_path, flow_acc_path, pfaf2_id):
++    """(v3.3) Return (gauge node, outlet lng, outlet lat) when the lake should be split out of a gauge's piece instead of outlet_node,
++    else None. See make_patch_v33.py."""
++    if res_poly is None or res_poly.is_empty or res_poly.area <= 0:
++        return None
++    def share(n):
++        p = G.nodes[n].get("polygon")
++        return 0.0 if p is None else p.intersection(res_poly).area / res_poly.area
++    gauges = [n for n in intersecting if n in G and n != outlet_node and G.nodes[n].get("is_gauge", False)
++              and G.nodes[n].get("lat") is not None and G.nodes[n].get("lng") is not None]
++    if not gauges:
++        return None
++    g = max(gauges, key=share)
++    sx = share(outlet_node) if outlet_node in G else 0.0
++    if share(g) < LAKE_IN_GAUGE_FRAC or share(g) <= sx or sx >= OUTLET_NODE_MAX_FRAC:
++        return None
++    if outlet_node in G and not nx.has_path(G, g, outlet_node):
++        return None                       # MERIT-Basins must put the gauge above the outlet node (the contradiction)
++    nd = G.nodes[g]
++    start = Point(float(nd["lng"]), float(nd["lat"]))
++    if _passes_outlet(outlet_d8, start, res_poly.union(nd["polygon"]).bounds) is not False:
++        return None                       # the gauge is above or at the outlet, or it cannot be told: as before
++    inner = res_poly.intersection(nd["polygon"])
++    if inner.is_empty:
++        return None
++    lng, lat = find_reservoir_outlet(inner, flow_dir_path, flow_acc_path, pfaf2_id)
++    if not nd["polygon"].buffer(MERIT_RES).contains(Point(lng, lat)):
++        return None
++    print(f"  rule 6: gauge {g} below the dam holds {share(g):.0%} of the lake (outlet node {outlet_node} {sx:.0%})")
++    return g, lng, lat
+ 
+ 
+ def insert_reservoirs(
+@@ -627,15 +805,48 @@
+             # Outlet at a polygon boundary — use most-downstream intersecting node
+             outlet_node = find_downstream_node(G, intersecting)
+ 
++        # Rule 6 (v3.3): the lake lies inside the piece of the gauge below its dam (see _lake_inside_gauge)
++        alt = _lake_inside_gauge(G, res_poly, outlet_node, intersecting, (flow_dir_path, pfaf2_id, outlet_lng, outlet_lat),
++                                 flow_dir_path, flow_acc_path, pfaf2_id)
++
+         # 3. Split the catchment at the dam pour point
+-        target = split_at_reservoir_outlet(
+-            G, outlet_node, outlet_lng, outlet_lat, res_id,
+-            flow_dir_path, flow_acc_path, pfaf2_id,
+-        )
++        target = None
++        if alt is not None:
++            # rule 6: split the lake out of the gauge's piece; the gauge keeps the part below the dam
++            g6, lng6, lat6 = alt
++            t6 = split_at_reservoir_outlet(G, g6, lng6, lat6, res_id, flow_dir_path, flow_acc_path, pfaf2_id)
++            if t6 != g6:
++                outlet_node, outlet_lng, outlet_lat, target = g6, lng6, lat6, t6
++                outlet_point = Point(outlet_lng, outlet_lat)
++                print(f"  rule 6: {res_id} split out of gauge {g6}'s piece; the lake drains into the gauge")
++        if target is None:
++            had6 = alt is not None and G.has_edge(alt[0], outlet_node)
++            target = split_at_reservoir_outlet(
++                G, outlet_node, outlet_lng, outlet_lat, res_id,
++                flow_dir_path, flow_acc_path, pfaf2_id,
++            )
++            if had6 and target != outlet_node and G.has_edge(alt[0], outlet_node):
++                # rule 6, gauge at the lake outlet: its piece ends inside the lake, so nothing of it lies below the dam. The lake takes
++                # the gauge's piece (the lake body) and every inflow of both pieces; the gauge takes the small piece at the dam and
++                # drains the lake into the outlet node's remainder.
++                g6 = alt[0]
++                pa, pl = [q for q in G.predecessors(g6)], [q for q in G.predecessors(target)]
++                for k in ("polygon", "river_geom", "area_km2", "length_km", "original_comid"):
++                    G.nodes[g6][k], G.nodes[target][k] = G.nodes[target].get(k), G.nodes[g6].get(k)
++                for q in pa: G.remove_edge(q, g6)
++                for q in pl: G.remove_edge(q, target)
++                G.remove_edge(g6, outlet_node)
++                G.remove_edge(target, outlet_node)
++                for q in pa + pl: G.add_edge(q, target)
++                G.add_edge(target, g6)
++                G.add_edge(g6, outlet_node)
++                print(f"  rule 6: gauge {g6} sits at the outlet of {res_id}: the lake takes its piece, the gauge the piece at the dam below it")
+ 
+         # 4. Merge upstream catchments into the reservoir node if they:
+-        #    (a) spatially overlap the reservoir polygon (any COMID), OR
++        #    (a) spatially overlap the reservoir polygon and the lake holds their river or most of them (rule 2), OR
+         #    (b) share the same original COMID (even without overlap).
++        #    Only catchments UPSTREAM of the target (draining into the outlet) qualify (rule 1), and only if their path to
++        #    the outlet does not run through a gauge or another reservoir (rule 3).
+         #    Gauges and other reservoirs are always protected.
+         target_comid = G.nodes[target].get("original_comid")
+         merged_nodes = []
+@@ -661,9 +872,22 @@
+             # Never merge other reservoir nodes
+             if G.nodes[node].get("is_reservoir", False):
+                 continue
++            # Only catchments that drain INTO the reservoir outlet (rule 1). A node below the pour point that merely
++            # touches the lake polygon (e.g. just under the dam) is downstream of the target; absorbing it stranded every
++            # node between the dam and it without an outlet, and build_conus_graphs then wired those dead ends to the basin
++            # outlet (graph v1 long links: upper Columbia -> Port Westward, Tongue River Reservoir -> Baton Rouge).
++            if node not in upstream_of_target:
++                continue
+             # (a) Spatial overlap with reservoir polygon
+             node_poly = G.nodes[node].get("polygon")
+             overlaps_reservoir = node_poly is not None and node_poly.intersects(res_poly)
++            if overlaps_reservoir and node_poly.area > 0:
++                frac = node_poly.intersection(res_poly).area / node_poly.area
++                if frac < MIN_OVERLAP_FRAC:
++                    overlaps_reservoir = False
++                elif frac < FULL_OVERLAP_FRAC:
++                    in_lake_m = _river_in_lake_m(G, node, res_poly)
++                    overlaps_reservoir = in_lake_m is None or in_lake_m >= MIN_RIVER_IN_LAKE_M
+             # (b) Same original COMID as the reservoir node (and is an upstream neighbor)
+             same_comid = (
+                 target_comid is not None
+@@ -671,6 +895,15 @@
+                 and node in upstream_of_target
+             )
+             if not (overlaps_reservoir or same_comid):
++                continue
++            # Never absorb across a protected node (rule 3): if this catchment's water reaches the outlet through a gauge
++            # or another reservoir, absorbing it would hand its inflows to the reservoir and leave that gauge or reservoir
++            # as an island with only its local area (graph v2.2: New River at Glen Lyn inside Bluestone Lake).
++            try:
++                between = nx.shortest_path(G, node, target)[1:-1]
++            except nx.NetworkXNoPath:
++                continue
++            if any(G.nodes[x].get("is_gauge", False) or G.nodes[x].get("is_reservoir", False) for x in between):
+                 continue
+             reason = "reservoir_overlap_merge" if overlaps_reservoir else "same_comid_merge"
+             info = merge_nodes(G, source=node, target=target, reason=reason)
+@@ -760,9 +993,25 @@
+     return True
+ 
+ def merge_nodes(G: nx.DiGraph, source: str, target: str, reason: str) -> dict:
+-    """Merge `source` node INTO `target` node with immediate geometry optimization."""
++    """Merge `source` node INTO `target` node with immediate geometry optimization.
++
++    Refuses (ValueError) a merge that would break the river tree, instead of silently doing it:
++      - a predecessor of `source` that lies between `target` and `source` (target -> ... -> pred -> source) cannot be
++        re-pointed to `target` without a loop; skipping it left that node with no nextdown (an interior dead end);
++      - `target` would end up with more than one downstream node (upstream area then gets counted twice).
++    Both only arise when a node is merged into a target UPSTREAM of it; insert_reservoirs no longer does that.
++    """
+     if source not in G or target not in G:
+         return None
++    stranded = [p for p in G.predecessors(source) if p != target and nx.has_path(G, target, p)]
++    new_exits = {s for s in G.successors(source) if s != target and not nx.has_path(G, s, target)}
++    exits = (set(G.successors(target)) - {source}) | new_exits
++    if stranded or len(exits) > 1:
++        raise ValueError(
++            f"merge_nodes({source!r} -> {target!r}, {reason}) would break the river tree: "
++            + (f"{stranded} would be left without an outlet" if stranded else "")
++            + ("; " if stranded and len(exits) > 1 else "")
++            + (f"{target!r} would drain to {sorted(map(str, exits))}" if len(exits) > 1 else ""))
+ 
+     s = G.nodes[source]
+     t = G.nodes[target]
+@@ -1192,6 +1441,10 @@
+ 
+     for i, g in gauges.iterrows():
+         min_area = rivers.loc[rivers["NextDownID"] == g["COMID"], "uparea"].sum()
++        gauges.loc[i, "min_area_orig_km2"] = min_area
++        # v3.4: a gauge re-snapped by drainage area carries the area of its target cell; snap to a channel at least that big
++        if "snap_min_area_km2" in gauges.columns and pd.notna(g.get("snap_min_area_km2")):
++            min_area = max(min_area, float(g["snap_min_area_km2"]))
+         gauges.loc[i, "min_area_km2"] = min_area
+         gauges.loc[i, "max_area_km2"] = rivers.loc[g["COMID"], "uparea"]
+ 

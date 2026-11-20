@@ -1,0 +1,499 @@
+DAM_ID,l1code,l1name,egroup
+41,6,Northwestern Forested Mountains,NWFM
+42,6,Northwestern Forested Mountains,NWFM
+55,6,Northwestern Forested Mountains,NWFM
+56,6,Northwestern Forested Mountains,NWFM
+57,6,Northwestern Forested Mountains,NWFM
+59,7,Marine West Coast Forest,PAC
+60,6,Northwestern Forested Mountains,NWFM
+63,6,Northwestern Forested Mountains,NWFM
+72,7,Marine West Coast Forest,PAC
+78,6,Northwestern Forested Mountains,NWFM
+80,6,Northwestern Forested Mountains,NWFM
+83,6,Northwestern Forested Mountains,NWFM
+85,6,Northwestern Forested Mountains,NWFM
+87,6,Northwestern Forested Mountains,NWFM
+88,6,Northwestern Forested Mountains,NWFM
+89,6,Northwestern Forested Mountains,NWFM
+90,7,Marine West Coast Forest,PAC
+91,6,Northwestern Forested Mountains,NWFM
+92,7,Marine West Coast Forest,PAC
+93,7,Marine West Coast Forest,PAC
+94,6,Northwestern Forested Mountains,NWFM
+97,7,Marine West Coast Forest,PAC
+98,6,Northwestern Forested Mountains,NWFM
+99,7,Marine West Coast Forest,PAC
+100,6,Northwestern Forested Mountains,NWFM
+101,6,Northwestern Forested Mountains,NWFM
+102,6,Northwestern Forested Mountains,NWFM
+107,6,Northwestern Forested Mountains,NWFM
+108,6,Northwestern Forested Mountains,NWFM
+111,6,Northwestern Forested Mountains,NWFM
+113,6,Northwestern Forested Mountains,NWFM
+114,6,Northwestern Forested Mountains,NWFM
+131,6,Northwestern Forested Mountains,NWFM
+132,11,Mediterranean California,PAC
+133,11,Mediterranean California,PAC
+136,6,Northwestern Forested Mountains,NWFM
+137,6,Northwestern Forested Mountains,NWFM
+138,6,Northwestern Forested Mountains,NWFM
+139,6,Northwestern Forested Mountains,NWFM
+140,6,Northwestern Forested Mountains,NWFM
+141,6,Northwestern Forested Mountains,NWFM
+142,6,Northwestern Forested Mountains,NWFM
+144,11,Mediterranean California,PAC
+145,6,Northwestern Forested Mountains,NWFM
+146,11,Mediterranean California,PAC
+147,6,Northwestern Forested Mountains,NWFM
+148,11,Mediterranean California,PAC
+152,11,Mediterranean California,PAC
+153,6,Northwestern Forested Mountains,NWFM
+156,6,Northwestern Forested Mountains,NWFM
+158,6,Northwestern Forested Mountains,NWFM
+161,11,Mediterranean California,PAC
+165,6,Northwestern Forested Mountains,NWFM
+168,11,Mediterranean California,PAC
+169,11,Mediterranean California,PAC
+180,11,Mediterranean California,PAC
+192,6,Northwestern Forested Mountains,NWFM
+198,11,Mediterranean California,PAC
+204,11,Mediterranean California,PAC
+210,11,Mediterranean California,PAC
+213,11,Mediterranean California,PAC
+214,11,Mediterranean California,PAC
+216,11,Mediterranean California,PAC
+230,11,Mediterranean California,PAC
+293,9,Great Plains,GP
+295,9,Great Plains,GP
+297,6,Northwestern Forested Mountains,NWFM
+299,6,Northwestern Forested Mountains,NWFM
+300,9,Great Plains,GP
+301,9,Great Plains,GP
+306,6,Northwestern Forested Mountains,NWFM
+307,9,Great Plains,GP
+310,6,Northwestern Forested Mountains,NWFM
+311,10,North American Deserts,NAD
+317,9,Great Plains,GP
+319,6,Northwestern Forested Mountains,NWFM
+320,9,Great Plains,GP
+338,6,Northwestern Forested Mountains,NWFM
+345,6,Northwestern Forested Mountains,NWFM
+346,10,North American Deserts,NAD
+350,10,North American Deserts,NAD
+353,10,North American Deserts,NAD
+355,9,Great Plains,GP
+361,6,Northwestern Forested Mountains,NWFM
+362,6,Northwestern Forested Mountains,NWFM
+364,6,Northwestern Forested Mountains,NWFM
+367,6,Northwestern Forested Mountains,NWFM
+368,6,Northwestern Forested Mountains,NWFM
+370,6,Northwestern Forested Mountains,NWFM
+372,6,Northwestern Forested Mountains,NWFM
+373,10,North American Deserts,NAD
+374,6,Northwestern Forested Mountains,NWFM
+377,6,Northwestern Forested Mountains,NWFM
+378,6,Northwestern Forested Mountains,NWFM
+382,10,North American Deserts,NAD
+383,6,Northwestern Forested Mountains,NWFM
+384,6,Northwestern Forested Mountains,NWFM
+385,10,North American Deserts,NAD
+386,10,North American Deserts,NAD
+388,10,North American Deserts,NAD
+389,10,North American Deserts,NAD
+390,10,North American Deserts,NAD
+392,6,Northwestern Forested Mountains,NWFM
+393,10,North American Deserts,NAD
+394,6,Northwestern Forested Mountains,NWFM
+396,6,Northwestern Forested Mountains,NWFM
+398,10,North American Deserts,NAD
+399,10,North American Deserts,NAD
+405,10,North American Deserts,NAD
+411,10,North American Deserts,NAD
+413,10,North American Deserts,NAD
+415,10,North American Deserts,NAD
+416,10,North American Deserts,NAD
+419,10,North American Deserts,NAD
+420,10,North American Deserts,NAD
+421,10,North American Deserts,NAD
+423,10,North American Deserts,NAD
+424,9,Great Plains,GP
+428,10,North American Deserts,NAD
+430,10,North American Deserts,NAD
+431,10,North American Deserts,NAD
+438,6,Northwestern Forested Mountains,NWFM
+442,6,Northwestern Forested Mountains,NWFM
+445,6,Northwestern Forested Mountains,NWFM
+448,6,Northwestern Forested Mountains,NWFM
+449,6,Northwestern Forested Mountains,NWFM
+450,6,Northwestern Forested Mountains,NWFM
+451,10,North American Deserts,NAD
+456,6,Northwestern Forested Mountains,NWFM
+458,6,Northwestern Forested Mountains,NWFM
+467,6,Northwestern Forested Mountains,NWFM
+468,6,Northwestern Forested Mountains,NWFM
+469,10,North American Deserts,NAD
+470,6,Northwestern Forested Mountains,NWFM
+471,10,North American Deserts,NAD
+473,10,North American Deserts,NAD
+477,6,Northwestern Forested Mountains,NWFM
+479,10,North American Deserts,NAD
+481,6,Northwestern Forested Mountains,NWFM
+487,6,Northwestern Forested Mountains,NWFM
+488,10,North American Deserts,NAD
+491,6,Northwestern Forested Mountains,NWFM
+492,6,Northwestern Forested Mountains,NWFM
+493,6,Northwestern Forested Mountains,NWFM
+497,6,Northwestern Forested Mountains,NWFM
+500,6,Northwestern Forested Mountains,NWFM
+502,6,Northwestern Forested Mountains,NWFM
+506,6,Northwestern Forested Mountains,NWFM
+507,10,North American Deserts,NAD
+508,9,Great Plains,GP
+509,6,Northwestern Forested Mountains,NWFM
+511,9,Great Plains,GP
+514,10,North American Deserts,NAD
+516,6,Northwestern Forested Mountains,NWFM
+517,6,Northwestern Forested Mountains,NWFM
+518,6,Northwestern Forested Mountains,NWFM
+519,6,Northwestern Forested Mountains,NWFM
+521,6,Northwestern Forested Mountains,NWFM
+522,6,Northwestern Forested Mountains,NWFM
+524,6,Northwestern Forested Mountains,NWFM
+527,10,North American Deserts,NAD
+529,6,Northwestern Forested Mountains,NWFM
+530,6,Northwestern Forested Mountains,NWFM
+531,6,Northwestern Forested Mountains,NWFM
+533,6,Northwestern Forested Mountains,NWFM
+536,6,Northwestern Forested Mountains,NWFM
+537,10,North American Deserts,NAD
+541,6,Northwestern Forested Mountains,NWFM
+542,10,North American Deserts,NAD
+544,6,Northwestern Forested Mountains,NWFM
+545,6,Northwestern Forested Mountains,NWFM
+546,10,North American Deserts,NAD
+548,6,Northwestern Forested Mountains,NWFM
+549,6,Northwestern Forested Mountains,NWFM
+551,6,Northwestern Forested Mountains,NWFM
+554,6,Northwestern Forested Mountains,NWFM
+555,6,Northwestern Forested Mountains,NWFM
+557,6,Northwestern Forested Mountains,NWFM
+567,10,North American Deserts,NAD
+574,6,Northwestern Forested Mountains,NWFM
+575,6,Northwestern Forested Mountains,NWFM
+578,6,Northwestern Forested Mountains,NWFM
+585,11,Mediterranean California,PAC
+592,11,Mediterranean California,PAC
+595,11,Mediterranean California,PAC
+597,10,North American Deserts,NAD
+599,6,Northwestern Forested Mountains,NWFM
+601,10,North American Deserts,NAD
+603,6,Northwestern Forested Mountains,NWFM
+604,6,Northwestern Forested Mountains,NWFM
+606,10,North American Deserts,NAD
+610,10,North American Deserts,NAD
+613,10,North American Deserts,NAD
+616,10,North American Deserts,NAD
+623,13,Temperate Sierras,NAD
+627,13,Temperate Sierras,NAD
+629,10,North American Deserts,NAD
+643,11,Mediterranean California,PAC
+644,13,Temperate Sierras,NAD
+656,10,North American Deserts,NAD
+657,10,North American Deserts,NAD
+664,10,North American Deserts,NAD
+753,9,Great Plains,GP
+758,5,Northern Forests,ETF
+777,9,Great Plains,GP
+780,9,Great Plains,GP
+784,9,Great Plains,GP
+789,5,Northern Forests,ETF
+792,5,Northern Forests,ETF
+798,9,Great Plains,GP
+806,5,Northern Forests,ETF
+827,9,Great Plains,GP
+837,9,Great Plains,GP
+854,9,Great Plains,GP
+861,9,Great Plains,GP
+868,9,Great Plains,GP
+870,9,Great Plains,GP
+872,9,Great Plains,GP
+882,6,Northwestern Forested Mountains,NWFM
+884,9,Great Plains,GP
+885,6,Northwestern Forested Mountains,NWFM
+893,9,Great Plains,GP
+895,9,Great Plains,GP
+897,9,Great Plains,GP
+898,9,Great Plains,GP
+899,9,Great Plains,GP
+901,9,Great Plains,GP
+903,9,Great Plains,GP
+904,9,Great Plains,GP
+905,9,Great Plains,GP
+908,9,Great Plains,GP
+910,9,Great Plains,GP
+913,9,Great Plains,GP
+919,9,Great Plains,GP
+920,9,Great Plains,GP
+924,9,Great Plains,GP
+929,9,Great Plains,GP
+931,9,Great Plains,GP
+936,9,Great Plains,GP
+938,9,Great Plains,GP
+939,9,Great Plains,GP
+947,9,Great Plains,GP
+948,9,Great Plains,GP
+952,9,Great Plains,GP
+953,9,Great Plains,GP
+955,9,Great Plains,GP
+956,9,Great Plains,GP
+957,9,Great Plains,GP
+961,8,Eastern Temperate Forests,ETF
+962,9,Great Plains,GP
+963,9,Great Plains,GP
+964,9,Great Plains,GP
+965,9,Great Plains,GP
+967,9,Great Plains,GP
+968,9,Great Plains,GP
+969,9,Great Plains,GP
+972,9,Great Plains,GP
+974,9,Great Plains,GP
+975,9,Great Plains,GP
+976,9,Great Plains,GP
+978,9,Great Plains,GP
+979,9,Great Plains,GP
+980,9,Great Plains,GP
+981,9,Great Plains,GP
+982,9,Great Plains,GP
+983,9,Great Plains,GP
+987,9,Great Plains,GP
+989,8,Eastern Temperate Forests,ETF
+991,9,Great Plains,GP
+995,9,Great Plains,GP
+998,9,Great Plains,GP
+1000,8,Eastern Temperate Forests,ETF
+1001,9,Great Plains,GP
+1003,9,Great Plains,GP
+1005,9,Great Plains,GP
+1006,8,Eastern Temperate Forests,ETF
+1007,9,Great Plains,GP
+1014,9,Great Plains,GP
+1016,6,Northwestern Forested Mountains,NWFM
+1017,8,Eastern Temperate Forests,ETF
+1019,8,Eastern Temperate Forests,ETF
+1020,9,Great Plains,GP
+1021,9,Great Plains,GP
+1023,9,Great Plains,GP
+1026,8,Eastern Temperate Forests,ETF
+1027,9,Great Plains,GP
+1028,9,Great Plains,GP
+1029,8,Eastern Temperate Forests,ETF
+1032,9,Great Plains,GP
+1033,8,Eastern Temperate Forests,ETF
+1034,8,Eastern Temperate Forests,ETF
+1035,8,Eastern Temperate Forests,ETF
+1036,8,Eastern Temperate Forests,ETF
+1037,9,Great Plains,GP
+1042,8,Eastern Temperate Forests,ETF
+1048,9,Great Plains,GP
+1055,9,Great Plains,GP
+1060,8,Eastern Temperate Forests,ETF
+1061,9,Great Plains,GP
+1063,9,Great Plains,GP
+1067,8,Eastern Temperate Forests,ETF
+1068,9,Great Plains,GP
+1073,9,Great Plains,GP
+1076,9,Great Plains,GP
+1077,8,Eastern Temperate Forests,ETF
+1080,9,Great Plains,GP
+1081,9,Great Plains,GP
+1084,8,Eastern Temperate Forests,ETF
+1086,9,Great Plains,GP
+1088,9,Great Plains,GP
+1092,8,Eastern Temperate Forests,ETF
+1093,8,Eastern Temperate Forests,ETF
+1095,9,Great Plains,GP
+1099,9,Great Plains,GP
+1101,8,Eastern Temperate Forests,ETF
+1104,9,Great Plains,GP
+1109,9,Great Plains,GP
+1110,9,Great Plains,GP
+1111,9,Great Plains,GP
+1112,8,Eastern Temperate Forests,ETF
+1113,9,Great Plains,GP
+1114,9,Great Plains,GP
+1117,9,Great Plains,GP
+1119,8,Eastern Temperate Forests,ETF
+1120,9,Great Plains,GP
+1121,8,Eastern Temperate Forests,ETF
+1122,8,Eastern Temperate Forests,ETF
+1123,8,Eastern Temperate Forests,ETF
+1124,8,Eastern Temperate Forests,ETF
+1125,8,Eastern Temperate Forests,ETF
+1126,8,Eastern Temperate Forests,ETF
+1128,8,Eastern Temperate Forests,ETF
+1129,9,Great Plains,GP
+1133,9,Great Plains,GP
+1134,8,Eastern Temperate Forests,ETF
+1135,9,Great Plains,GP
+1138,9,Great Plains,GP
+1139,9,Great Plains,GP
+1140,9,Great Plains,GP
+1141,8,Eastern Temperate Forests,ETF
+1144,8,Eastern Temperate Forests,ETF
+1145,9,Great Plains,GP
+1146,8,Eastern Temperate Forests,ETF
+1148,9,Great Plains,GP
+1149,9,Great Plains,GP
+1150,9,Great Plains,GP
+1151,9,Great Plains,GP
+1152,9,Great Plains,GP
+1153,8,Eastern Temperate Forests,ETF
+1158,9,Great Plains,GP
+1159,9,Great Plains,GP
+1160,8,Eastern Temperate Forests,ETF
+1161,9,Great Plains,GP
+1163,8,Eastern Temperate Forests,ETF
+1164,9,Great Plains,GP
+1165,9,Great Plains,GP
+1166,9,Great Plains,GP
+1167,8,Eastern Temperate Forests,ETF
+1170,9,Great Plains,GP
+1171,9,Great Plains,GP
+1176,9,Great Plains,GP
+1177,9,Great Plains,GP
+1179,9,Great Plains,GP
+1181,8,Eastern Temperate Forests,ETF
+1182,8,Eastern Temperate Forests,ETF
+1183,9,Great Plains,GP
+1184,9,Great Plains,GP
+1185,9,Great Plains,GP
+1186,8,Eastern Temperate Forests,ETF
+1188,9,Great Plains,GP
+1189,9,Great Plains,GP
+1190,9,Great Plains,GP
+1192,8,Eastern Temperate Forests,ETF
+1194,9,Great Plains,GP
+1196,9,Great Plains,GP
+1197,9,Great Plains,GP
+1198,9,Great Plains,GP
+1202,10,North American Deserts,NAD
+1205,9,Great Plains,GP
+1208,9,Great Plains,GP
+1210,9,Great Plains,GP
+1212,9,Great Plains,GP
+1214,9,Great Plains,GP
+1216,9,Great Plains,GP
+1217,9,Great Plains,GP
+1218,9,Great Plains,GP
+1219,8,Eastern Temperate Forests,ETF
+1220,9,Great Plains,GP
+1231,8,Eastern Temperate Forests,ETF
+1232,9,Great Plains,GP
+1233,8,Eastern Temperate Forests,ETF
+1234,9,Great Plains,GP
+1236,9,Great Plains,GP
+1237,9,Great Plains,GP
+1238,8,Eastern Temperate Forests,ETF
+1240,8,Eastern Temperate Forests,ETF
+1241,8,Eastern Temperate Forests,ETF
+1242,10,North American Deserts,NAD
+1243,9,Great Plains,GP
+1245,9,Great Plains,GP
+1247,9,Great Plains,GP
+1248,9,Great Plains,GP
+1249,9,Great Plains,GP
+1254,9,Great Plains,GP
+1257,9,Great Plains,GP
+1258,9,Great Plains,GP
+1261,8,Eastern Temperate Forests,ETF
+1262,9,Great Plains,GP
+1266,8,Eastern Temperate Forests,ETF
+1269,8,Eastern Temperate Forests,ETF
+1271,9,Great Plains,GP
+1273,9,Great Plains,GP
+1275,8,Eastern Temperate Forests,ETF
+1277,9,Great Plains,GP
+1279,8,Eastern Temperate Forests,ETF
+1280,9,Great Plains,GP
+1283,9,Great Plains,GP
+1285,9,Great Plains,GP
+1286,9,Great Plains,GP
+1287,8,Eastern Temperate Forests,ETF
+1291,9,Great Plains,GP
+1292,9,Great Plains,GP
+1294,9,Great Plains,GP
+1295,8,Eastern Temperate Forests,ETF
+1296,8,Eastern Temperate Forests,ETF
+1297,9,Great Plains,GP
+1302,9,Great Plains,GP
+1305,9,Great Plains,GP
+1316,9,Great Plains,GP
+1317,9,Great Plains,GP
+1585,8,Eastern Temperate Forests,ETF
+1595,8,Eastern Temperate Forests,ETF
+1600,8,Eastern Temperate Forests,ETF
+1606,8,Eastern Temperate Forests,ETF
+1615,8,Eastern Temperate Forests,ETF
+1617,8,Eastern Temperate Forests,ETF
+1619,8,Eastern Temperate Forests,ETF
+1620,8,Eastern Temperate Forests,ETF
+1631,8,Eastern Temperate Forests,ETF
+1636,8,Eastern Temperate Forests,ETF
+1650,8,Eastern Temperate Forests,ETF
+1659,8,Eastern Temperate Forests,ETF
+1691,8,Eastern Temperate Forests,ETF
+1699,8,Eastern Temperate Forests,ETF
+1706,8,Eastern Temperate Forests,ETF
+1707,8,Eastern Temperate Forests,ETF
+1709,8,Eastern Temperate Forests,ETF
+1712,8,Eastern Temperate Forests,ETF
+1713,8,Eastern Temperate Forests,ETF
+1716,8,Eastern Temperate Forests,ETF
+1726,8,Eastern Temperate Forests,ETF
+1733,8,Eastern Temperate Forests,ETF
+1735,8,Eastern Temperate Forests,ETF
+1742,8,Eastern Temperate Forests,ETF
+1752,8,Eastern Temperate Forests,ETF
+1753,8,Eastern Temperate Forests,ETF
+1754,8,Eastern Temperate Forests,ETF
+1755,8,Eastern Temperate Forests,ETF
+1756,8,Eastern Temperate Forests,ETF
+1758,8,Eastern Temperate Forests,ETF
+1762,8,Eastern Temperate Forests,ETF
+1776,8,Eastern Temperate Forests,ETF
+1777,8,Eastern Temperate Forests,ETF
+1782,8,Eastern Temperate Forests,ETF
+1786,8,Eastern Temperate Forests,ETF
+1789,8,Eastern Temperate Forests,ETF
+1790,8,Eastern Temperate Forests,ETF
+1791,8,Eastern Temperate Forests,ETF
+1796,8,Eastern Temperate Forests,ETF
+1804,8,Eastern Temperate Forests,ETF
+1809,8,Eastern Temperate Forests,ETF
+1812,8,Eastern Temperate Forests,ETF
+1814,8,Eastern Temperate Forests,ETF
+1815,8,Eastern Temperate Forests,ETF
+1816,8,Eastern Temperate Forests,ETF
+1827,8,Eastern Temperate Forests,ETF
+1831,8,Eastern Temperate Forests,ETF
+1836,8,Eastern Temperate Forests,ETF
+1841,8,Eastern Temperate Forests,ETF
+1842,8,Eastern Temperate Forests,ETF
+1845,8,Eastern Temperate Forests,ETF
+1848,8,Eastern Temperate Forests,ETF
+1851,8,Eastern Temperate Forests,ETF
+1862,8,Eastern Temperate Forests,ETF
+1863,8,Eastern Temperate Forests,ETF
+1864,8,Eastern Temperate Forests,ETF
+1865,8,Eastern Temperate Forests,ETF
+1869,8,Eastern Temperate Forests,ETF
+1872,8,Eastern Temperate Forests,ETF
+1876,8,Eastern Temperate Forests,ETF
+1896,8,Eastern Temperate Forests,ETF
+1908,8,Eastern Temperate Forests,ETF
+1916,8,Eastern Temperate Forests,ETF
+2158,8,Eastern Temperate Forests,ETF
+2183,8,Eastern Temperate Forests,ETF
+7214,6,Northwestern Forested Mountains,NWFM
+7308,8,Eastern Temperate Forests,ETF
+7313,6,Northwestern Forested Mountains,NWFM
